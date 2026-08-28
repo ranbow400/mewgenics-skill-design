@@ -1,6 +1,6 @@
 {
- "version": 4,
- "updated": "2026-08-28T21:21:15",
+ "version": 5,
+ "updated": "2026-08-28T21:30:07",
  "repo": "ranbow400/mewgenics-skill-design",
  "submit": {
   "bin": "6a918a1af5f4af5e294dd90a",
@@ -44,7 +44,21 @@
    "rarity": "Uncommon",
    "done": true,
    "effPre": "向手牌中加入一张肉（肉 0费技能牌 使最右的猫回复3生命值，参考魔法飞弹的排除卡池写法，消耗），消耗",
-   "effUpg": "向手牌中加入一张肉+（肉 0费技能牌 使最右的猫回复5生命值，消耗），消耗"
+   "effUpg": "向手牌中加入一张肉+（肉 0费技能牌 使最右的猫回复5生命值，消耗），消耗",
+   "versions": [
+    {
+     "author": "甄虹",
+     "date": "2026-08-28",
+     "design": {
+      "cost": "1",
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "effPre": "向手牌中加入一张肉（肉 0费技能牌 使最右的猫回复3生命值，参考魔法飞弹的排除卡池写法，消耗），消耗",
+      "effUpg": "向手牌中加入一张肉+（肉 0费技能牌 使最右的猫回复5生命值，消耗），消耗",
+      "done": true
+     }
+    }
+   ]
   },
   {
    "en": "Block",
@@ -120,7 +134,21 @@
    "rarity": "Common",
    "done": true,
    "effPre": "不做",
-   "effUpg": "获得 +1 魔法伤害， 直到回合结束。 (此法术消耗更少。)"
+   "effUpg": "获得 +1 魔法伤害， 直到回合结束。 (此法术消耗更少。)",
+   "versions": [
+    {
+     "author": "甄虹",
+     "date": "2026-08-28",
+     "design": {
+      "cost": "",
+      "type": "Attack",
+      "rarity": "Common",
+      "effPre": "不做",
+      "effUpg": "获得 +1 魔法伤害， 直到回合结束。 (此法术消耗更少。)",
+      "done": true
+     }
+    }
+   ]
   },
   {
    "en": "Borrow Mana",
