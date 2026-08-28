@@ -89,10 +89,9 @@ td input.num { width: 44px; }
 <div id="help" style="display:none;background:#fff;border-bottom:1px solid #d5d8dc;padding:10px 16px;font-size:12px;color:#555;line-height:1.8">
   <b style="color:#8a6d1d">协作流程</b><br>
   1. 页面数据来自仓库 <code>designs.json</code>（在线加载，加载失败或超时用内置数据）。<br>
-  2. 编辑某行（费用/类型/稀有度/效果）→ 点行内<b>「提交此版」</b> → 网页内填名字直接提交（不需要任何账号），提交进入待合并列表。<br>
-  3. 点顶部<b>「待合并 N」</b>可查看所有人的待合并提交；维护者确认后合入 designs.json，自动成为该技能的版本，其他人点「版本 N」都能看到。<br>
-  4. 离线协作：<b>导出 JSON</b> 发给别人 → 对方改完 <b>导入 JSON</b>（会作为新版本记录）→ 再导出发回或直接提交。<br>
-  5. 仓库：<a href="https://github.com/ranbow400/mewgenics-skill-design" target="_blank" style="color:#1a6f9c">ranbow400/mewgenics-skill-design</a>
+  2. 编辑某行（费用/类型/稀有度/效果）→ 点行内<b>「提交此版」</b> → 网页内填名字直接提交（不需要任何账号），提交进入待审核列表，维护者确认后合入正式数据，所有人可见。<br>
+  3. 离线协作：<b>导出 JSON</b> 发给别人 → 对方改完 <b>导入 JSON</b>（会作为新版本记录）→ 再导出发回或直接提交。<br>
+  4. 仓库：<a href="https://github.com/ranbow400/mewgenics-skill-design" target="_blank" style="color:#1a6f9c">ranbow400/mewgenics-skill-design</a>
 </div>
 <div class="wrap">
 <table id="tbl">
@@ -118,9 +117,18 @@ td input.num { width: 44px; }
 </div>
 <script>
 
+/* 审核模式：URL 带 ?admin（或 #admin）才显示待合并/合并功能；普通访问 = 群友编辑页 */
+const IS_ADMIN = /[?&#]admin/i.test(location.href);
+
 const tbody = document.querySelector('#tbody, tbody');
 const count = document.getElementById('count');
 const state = { online: false, dataVersion: null, dataUpdated: null, author: '' };
+
+/* 群友版隐藏待合并按钮（审核功能只在 admin 页出现） */
+document.addEventListener('DOMContentLoaded', () => {
+  const b = document.getElementById('subListBtn');
+  if (b) b.style.display = IS_ADMIN ? '' : 'none';
+});
 
 /* 在线加载 designs.json, 5 秒超时; 页面已先用内置数据渲染, 加载成功才切换 */
 async function loadOnline() {
@@ -359,7 +367,7 @@ async function doSubmit(c) {
 async function loadSubmissions() {
   const btn = document.getElementById('subListBtn');
   if (!btn) return;
-  if (!submitCfg.bin) { btn.style.display = 'none'; return; }
+  if (!IS_ADMIN || !submitCfg.bin) { btn.style.display = 'none'; return; }
   btn.style.display = '';
   try {
     const r = await fetch('https://api.jsonbin.io/v3/b/' + submitCfg.bin + '/latest', {
@@ -413,6 +421,10 @@ function showSubmissions() {
   if (!items.length) { openModal('待合并提交', '<div style="padding:12px;color:#888">当前没有待合并的提交。</div>'); return; }
   const list = items.map((it, idx) => {
     const d = it.design || {};
+    const actions = IS_ADMIN ? `<div style="display:flex;gap:8px;margin-top:10px">
+        <button class="vbtn" onclick="mergeSubmission(${idx})" style="font-size:12px;padding:6px 12px">✓ 合并进版本</button>
+        <button class="vbtn alt" onclick="discardSubmission(${idx})" style="font-size:12px;padding:6px 12px">✗ 忽略</button>
+      </div>` : '';
     return `<div class="vcard">
       <div class="vhead"><b>${esc(it.zh || it.en)}</b> (${esc(it.code)}) · ${esc(it.author)} · ${esc((it.date || '').slice(0, 10))}</div>
       ${it.note ? `<div class="vrow"><span class="vkey">备注</span><span class="vval">${esc(it.note)}</span></div>` : ''}
@@ -421,10 +433,7 @@ function showSubmissions() {
       <div class="vrow"><span class="vkey">稀有度</span><span class="vval">${esc(d.rarity || '')}</span></div>
       <div class="vrow"><span class="vkey">升级前</span><span class="vval">${esc(d.effPre || '')}</span></div>
       <div class="vrow"><span class="vkey">升级后</span><span class="vval">${esc(d.effUpg || '')}</span></div>
-      <div style="display:flex;gap:8px;margin-top:10px">
-        <button class="vbtn" onclick="mergeSubmission(${idx})" style="font-size:12px;padding:6px 12px">✓ 合并进版本</button>
-        <button class="vbtn alt" onclick="discardSubmission(${idx})" style="font-size:12px;padding:6px 12px">✗ 忽略</button>
-      </div>
+      ${actions}
     </div>`;
   }).join('');
   openModal('待合并提交 (' + items.length + ')', list + '<div style="font-size:11px;color:#888">「合并进版本」= 该提交成为此技能的版本；「忽略」= 从列表移除不合并。处理后会同步提交箱。</div>');
@@ -440,28 +449,9 @@ async function saveBin(items, merged) {
   if (!pr.ok) throw new Error('HTTP ' + pr.status);
 }
 
-/* 维护者权限：合并/忽略需密码（页面只存 SHA-256，无明文） */
-const ADMIN_HASH = '17e465f52bd325ba42969679e002dbbbdd65b19f75d2f94d14786abc8626ae81';
-
-async function sha256hex(s) {
-  const buf = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(s));
-  return Array.from(new Uint8Array(buf)).map(b => b.toString(16).padStart(2, '0')).join('');
-}
-
-async function adminCheck() {
-  if (!ADMIN_HASH) return true;
-  const pw = prompt('维护者密码：');
-  if (!pw) return false;
-  try {
-    return (await sha256hex(pw)) === ADMIN_HASH;
-  } catch (e) {
-    return false;
-  }
-}
-
 /* 合并：提交内容成为该技能的一个版本（存入 merged，刷新不丢） */
 async function mergeSubmission(idx) {
-  if (!(await adminCheck())) { alert('密码错误或已取消，未合并'); return; }
+  if (!IS_ADMIN) return;
   const btn = document.getElementById('subListBtn');
   let items = [], merged = [];
   try {
@@ -494,7 +484,7 @@ async function mergeSubmission(idx) {
 
 /* 忽略：从待合并列表移除，不合并 */
 async function discardSubmission(idx) {
-  if (!(await adminCheck())) { alert('密码错误或已取消'); return; }
+  if (!IS_ADMIN) return;
   const btn = document.getElementById('subListBtn');
   let items = [], merged = [];
   try {
