@@ -377,7 +377,7 @@ function showSubmissions() {
   let items = [];
   try { items = JSON.parse(btn.dataset.items || '[]'); } catch (e) {}
   if (!items.length) { openModal('待合并提交', '<div style="padding:12px;color:#888">当前没有待合并的提交。</div>'); return; }
-  const list = items.map((it) => {
+  const list = items.map((it, idx) => {
     const d = it.design || {};
     return `<div class="vcard">
       <div class="vhead"><b>${esc(it.zh || it.en)}</b> (${esc(it.code)}) · ${esc(it.author)} · ${esc((it.date || '').slice(0, 10))}</div>
@@ -387,9 +387,68 @@ function showSubmissions() {
       <div class="vrow"><span class="vkey">稀有度</span><span class="vval">${esc(d.rarity || '')}</span></div>
       <div class="vrow"><span class="vkey">升级前</span><span class="vval">${esc(d.effPre || '')}</span></div>
       <div class="vrow"><span class="vkey">升级后</span><span class="vval">${esc(d.effUpg || '')}</span></div>
+      <div style="display:flex;gap:8px;margin-top:10px">
+        <button class="vbtn" onclick="mergeSubmission(${idx})" style="font-size:12px;padding:6px 12px">✓ 合并进版本</button>
+        <button class="vbtn alt" onclick="discardSubmission(${idx})" style="font-size:12px;padding:6px 12px">✗ 忽略</button>
+      </div>
     </div>`;
   }).join('');
-  openModal('待合并提交 (' + items.length + ')', list + '<div style="font-size:11px;color:#888">这些提交等维护者确认后合入 designs.json，所有人可见。</div>');
+  openModal('待合并提交 (' + items.length + ')', list + '<div style="font-size:11px;color:#888">「合并进版本」= 该提交成为此技能的版本；「忽略」= 从列表移除不合并。处理后会同步提交箱。</div>');
+}
+
+/* 提交箱同步（合并/忽略后写回） */
+async function saveBin(items) {
+  const pr = await fetch('https://api.jsonbin.io/v3/b/' + submitCfg.bin, {
+    method: 'PUT',
+    headers: { 'X-Master-Key': submitCfg.key, 'Content-Type': 'application/json' },
+    body: JSON.stringify({ items: items })
+  });
+  if (!pr.ok) throw new Error('HTTP ' + pr.status);
+}
+
+/* 合并：提交内容成为该技能的一个版本 */
+async function mergeSubmission(idx) {
+  const btn = document.getElementById('subListBtn');
+  let items = [];
+  try { items = JSON.parse(btn.dataset.items || '[]'); } catch (e) {}
+  const it = items[idx];
+  if (!it) return;
+  const byCode = {};
+  DATA.forEach((c, i) => byCode[c.code] = i);
+  if (!(it.code in byCode)) { alert('技能 ' + it.code + ' 不在当前表格中，无法合并'); return; }
+  const c = DATA[byCode[it.code]];
+  const design = {};
+  ['cost', 'type', 'rarity', 'effPre', 'effUpg', 'done'].forEach(k => { if (it.design && it.design[k] !== undefined) design[k] = it.design[k]; });
+  c.versions = c.versions || [];
+  c.versions.push({ author: it.author || '匿名', date: it.date || new Date().toISOString().slice(0, 10), design: design });
+  items.splice(idx, 1);
+  try {
+    await saveBin(items);
+    btn.dataset.items = JSON.stringify(items);
+    render(getFiltered());
+    showSubmissions();
+    alert('已合并「' + (it.zh || it.en) + '」为版本。点该行「版本」可查看。记得导出 JSON 同步 designs.json。');
+  } catch (e) {
+    alert('提交箱同步失败: ' + e.message + '（页面已合并，但提交箱未移除，请重试或手动处理）');
+  }
+}
+
+/* 忽略：从待合并列表移除，不合并 */
+async function discardSubmission(idx) {
+  const btn = document.getElementById('subListBtn');
+  let items = [];
+  try { items = JSON.parse(btn.dataset.items || '[]'); } catch (e) {}
+  const it = items[idx];
+  if (!it) return;
+  if (!confirm('确定忽略「' + (it.zh || it.en) + '」的提交？将从待合并列表移除。')) return;
+  items.splice(idx, 1);
+  try {
+    await saveBin(items);
+    btn.dataset.items = JSON.stringify(items);
+    showSubmissions();
+  } catch (e) {
+    alert('提交箱同步失败: ' + e.message);
+  }
 }
 
 /* ---------- 导入本地 JSON(追加为版本) ---------- */
