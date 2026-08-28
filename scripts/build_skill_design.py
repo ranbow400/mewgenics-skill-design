@@ -375,3 +375,11 @@ style = html[html.find('<style>'):style_end] + new_css + '\n</style>'
 out = head + '\n' + style + '\n</head>\n<body>\n' + new_header + '\n<div class="wrap">\n<table id="tbl">\n' + new_table_head + '\n<tbody></tbody>\n</table>\n</div>\n' + modal_html + '\n<script>\n' + script + '\n</script>\n</body>\n</html>\n'
 io.open(OUT, 'w', encoding='utf-8').write(out)
 print('wrote skill_design.html (%d bytes)' % len(out.encode('utf-8')))
+
+# 同步为 index.html (GitHub Pages 首页) + 确保 .nojekyll
+io.open(os.path.join(ROOT, 'index.html'), 'w', encoding='utf-8').write(out)
+print('wrote index.html (copy)')
+noj = os.path.join(ROOT, '.nojekyll')
+if not os.path.exists(noj):
+    io.open(noj, 'w', encoding='utf-8').write('')
+    print('wrote .nojekyll')
