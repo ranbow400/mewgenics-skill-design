@@ -1,10 +1,10 @@
 {
  "version": 4,
- "updated": "2026-08-28T21:13:53",
+ "updated": "2026-08-28T21:19:05",
  "repo": "ranbow400/mewgenics-skill-design",
  "submit": {
-  "bin": "",
-  "key": ""
+  "bin": "6a918a1af5f4af5e294dd90a",
+  "key": "$2a$10$tzavVcXGo.lD8JfVnXfoCOZNMXAmRCp1qmu06awsQqX33bzWCNs2q"
  },
  "note": "本文件为协作数据源。每行 skills[] 的 versions[] 记录其他人提交的设计版本(author/date/design字段)。submit 字段填 jsonbin 提交箱 bin id 和 master key 后，页面即可在线提交。合并提交: python scripts/sync_submissions.py",
  "skills": [

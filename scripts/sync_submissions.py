@@ -1,20 +1,33 @@
 # -*- coding: utf-8 -*-
 """
 从 jsonbin 提交箱拉取待合并提交 -> 合入 designs.json -> 推送到 GitHub -> 清空提交箱
-维护者用。用法:
-  python scripts/sync_submissions.py            # 拉取+合并+推送+清空(需要 git push 代理)
+维护者用。注意: 用 curl.exe 调 jsonbin API(Python urllib 的 TLS 指纹会被 Cloudflare 拦 1010)。
+用法:
+  python scripts/sync_submissions.py            # 拉取+合并+推送+清空
   python scripts/sync_submissions.py --dry-run  # 只预览不推送不清空
 提交箱 bin/key 从 designs.json 的 submit 字段读取。
 """
-import json, io, sys, os, datetime, subprocess, urllib.request
+import json, io, sys, os, datetime, subprocess
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
 DESIGNS = os.path.join(ROOT, 'designs.json')
+CURL = 'curl.exe'
+UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/126.0'
 
-def http_get(url, headers=None):
-    req = urllib.request.Request(url, headers=headers or {})
-    return urllib.request.urlopen(req, timeout=30)
+def curl_json(url, key=None, method='GET', body=None):
+    cmd = [CURL, '-s', '--connect-timeout', '15', '-H', 'User-Agent: ' + UA]
+    if key:
+        cmd += ['-H', 'X-Master-Key: ' + key]
+    if method != 'GET':
+        cmd += ['-X', method]
+    if body is not None:
+        cmd += ['-H', 'Content-Type: application/json', '--data-binary', json.dumps(body, ensure_ascii=False)]
+    cmd.append(url)
+    r = subprocess.run(cmd, capture_output=True, text=True, encoding='utf-8', errors='replace')
+    if r.returncode != 0:
+        raise RuntimeError('curl 失败: ' + r.stderr[:200])
+    return r.stdout
 
 def main():
     dry = '--dry-run' in sys.argv
@@ -25,8 +38,8 @@ def main():
         print('designs.json 未配置 submit.bin/key，无法同步')
         sys.exit(1)
 
-    r = http_get('https://api.jsonbin.io/v3/b/%s/latest' % bin_id, {'X-Master-Key': key})
-    d = json.loads(r.read())
+    out = curl_json('https://api.jsonbin.io/v3/b/%s/latest' % bin_id, key)
+    d = json.loads(out)
     items = (d.get('record') or {}).get('items') or []
     if not items:
         print('提交箱为空，没有待合并提交')
@@ -73,10 +86,7 @@ def main():
     print('已推送到 GitHub')
 
     # 清空提交箱
-    req = urllib.request.Request('https://api.jsonbin.io/v3/b/%s' % bin_id, method='PUT')
-    req.add_header('X-Master-Key', key)
-    req.add_header('Content-Type', 'application/json')
-    urllib.request.urlopen(req, json.dumps({'items': []}).encode(), timeout=30)
+    curl_json('https://api.jsonbin.io/v3/b/%s' % bin_id, key, 'PUT', {'items': []})
     print('提交箱已清空')
 
 if __name__ == '__main__':

@@ -25,11 +25,20 @@ data = json.loads(m.group(1))
 print('skills:', len(data))
 
 # ---------- designs.json ----------
+# 保留已配置的 submit 字段(提交箱 bin/key), 防止重建时被清空
+old_submit = {}
+if os.path.exists(DESIGNS):
+    try:
+        old_d = json.load(io.open(DESIGNS, encoding='utf-8'))
+        old_submit = old_d.get('submit') or {}
+    except Exception:
+        pass
+
 designs = {
     "version": 4,
     "updated": datetime.datetime.now().strftime('%Y-%m-%dT%H:%M:%S'),
     "repo": "ranbow400/mewgenics-skill-design",
-    "submit": {"bin": "", "key": ""},
+    "submit": old_submit if old_submit.get('bin') else {"bin": "", "key": ""},
     "note": "本文件为协作数据源。每行 skills[] 的 versions[] 记录其他人提交的设计版本(author/date/design字段)。submit 字段填 jsonbin 提交箱 bin id 和 master key 后，页面即可在线提交。合并提交: python scripts/sync_submissions.py",
     "skills": data,
 }
