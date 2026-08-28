@@ -41,19 +41,22 @@ const tbody = document.querySelector('#tbody, tbody');
 const count = document.getElementById('count');
 const state = { online: false, dataVersion: null, dataUpdated: null, author: '' };
 
-/* 在线加载 designs.json, 失败用内嵌 DATA */
+/* 在线加载 designs.json, 5 秒超时, 失败用内嵌 DATA */
 async function loadOnline() {
+  const ctl = new AbortController();
+  const timer = setTimeout(() => ctl.abort(), 5000);
   try {
-    const r = await fetch('designs.json', { cache: 'no-cache' });
+    const r = await fetch('designs.json', { cache: 'no-cache', signal: ctl.signal });
     if (!r.ok) throw new Error(r.status);
     const d = await r.json();
     if (Array.isArray(d.skills) && d.skills.length) {
-      window.DATA = d.skills;
+      DATA = d.skills;
       state.online = true;
       state.dataVersion = d.version || null;
       state.dataUpdated = d.updated || null;
     }
-  } catch (e) { /* 离线/本地打开, 用内嵌 DATA */ }
+  } catch (e) { /* 超时/离线, 用内嵌 DATA */ }
+  clearTimeout(timer);
   refreshSourceBadge();
   render(getFiltered());
 }
@@ -63,11 +66,13 @@ function refreshSourceBadge() {
   const ver = document.getElementById('dataVer');
   if (state.online) {
     el.textContent = '在线数据';
-    el.style.background = '#1b5e20';
+    el.style.background = '#e8f0e8';
+    el.style.borderColor = '#b7ccb7';
     ver.textContent = 'designs.json v' + state.dataVersion + (state.dataUpdated ? ' · ' + state.dataUpdated.slice(0, 10) : '');
   } else {
-    el.textContent = '内置数据(离线)';
-    el.style.background = '#37474f';
+    el.textContent = '内置数据';
+    el.style.background = '#e7e9ec';
+    el.style.borderColor = '#c9cdd3';
     ver.textContent = '';
   }
 }
@@ -303,8 +308,8 @@ window.addEventListener('resize', syncSticky);
   });
 })();
 
-/* 内嵌数据(离线兜底, 会被 designs.json 覆盖) */
-const DATA = __DATA__;
+/* 内嵌数据(兜底, 会被 designs.json 覆盖) */
+let DATA = __DATA__;
 loadOnline();
 '''
 
@@ -318,25 +323,25 @@ old_header_end = html.find('</header>', body_start)
 old_table = html[html.find('<colgroup>'):html.find('</thead>')]
 
 new_header = '''<header>
-  <h1>无色系主动技能 → 抹大拉卡牌设计表 <span style="color:#4fc3f7;font-size:12px">v4 协作版</span></h1>
+  <h1>无色系主动技能 → 抹大拉卡牌设计表</h1>
   <input id="filter" placeholder="筛选（中文名/英文名/code）" style="width:220px">
-  <label style="font-size:12px;color:#90a4ae"><input type="checkbox" id="hideDone"> 隐藏已做</label>
+  <label style="font-size:12px;color:#666"><input type="checkbox" id="hideDone"> 隐藏已做</label>
   <button onclick="exportJson()">导出 JSON</button>
   <button class="alt" onclick="exportTsv()">导出 TSV</button>
   <button class="alt" onclick="document.getElementById('fileInput').click()">导入 JSON</button>
   <input type="file" id="fileInput" accept=".json" style="display:none">
-  <span id="srcBadge" style="font-size:11px;color:#fff;padding:3px 8px;border-radius:10px">加载中…</span>
-  <span id="dataVer" style="font-size:11px;color:#90a4ae"></span>
+  <span id="srcBadge" style="font-size:11px;color:#333;padding:3px 8px;border-radius:10px;background:#e7e9ec;border:1px solid #c9cdd3">加载中…</span>
+  <span id="dataVer" style="font-size:11px;color:#888"></span>
   <button class="alt" onclick="document.getElementById('help').style.display = document.getElementById('help').style.display === 'none' ? 'block' : 'none'">协作说明</button>
-  <span id="count" style="color:#90a4ae"></span>
+  <span id="count" style="color:#888"></span>
 </header>
-<div id="help" style="display:none;background:#232833;border-bottom:1px solid #333a48;padding:10px 16px;font-size:12px;color:#b0bec5;line-height:1.8">
-  <b style="color:#ffd54f">协作流程</b><br>
-  1. 页面数据来自仓库 <code>designs.json</code>（在线加载，离线时用内置数据）。<br>
+<div id="help" style="display:none;background:#fff;border-bottom:1px solid #d5d8dc;padding:10px 16px;font-size:12px;color:#555;line-height:1.8">
+  <b style="color:#8a6d1d">协作流程</b><br>
+  1. 页面数据来自仓库 <code>designs.json</code>（在线加载，加载失败或超时用内置数据）。<br>
   2. 编辑某行（费用/类型/稀有度/效果）→ 点行内<b>「提交此版」</b> → 会打开 GitHub Issue 预填页，点提交即可。维护者合并后，其他人的页面自动出现该版本。<br>
   3. 想看某技能别人设计过什么版本：点行内<b>「版本 N」</b>，可逐版查看并「采用此版本」。<br>
   4. 离线协作：<b>导出 JSON</b> 发给别人 → 对方改完 <b>导入 JSON</b>（会作为新版本记录）→ 再导出发回或直接提交。<br>
-  5. 仓库：<a href="https://github.com/ranbow400/mewgenics-skill-design" target="_blank" style="color:#4fc3f7">ranbow400/mewgenics-skill-design</a>
+  5. 仓库：<a href="https://github.com/ranbow400/mewgenics-skill-design" target="_blank" style="color:#1a6f9c">ranbow400/mewgenics-skill-design</a>
 </div>'''
 
 new_table_head = '''<colgroup>
@@ -348,29 +353,56 @@ new_table_head = '''<colgroup>
   <th>费用</th><th>类型</th><th>稀有度</th><th>升级前效果（填）</th><th>升级后效果（填）</th><th>已做</th><th>版本/提交</th>
 </tr></thead>'''
 
-modal_html = '''<div id="modal" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.6);z-index:100;align-items:center;justify-content:center">
-  <div style="background:#232833;border:1px solid #333a48;border-radius:10px;max-width:640px;width:92%;max-height:82vh;overflow:auto;padding:16px">
+modal_html = '''<div id="modal" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.35);z-index:100;align-items:center;justify-content:center">
+  <div style="background:#fff;border:1px solid #d5d8dc;border-radius:8px;max-width:640px;width:92%;max-height:82vh;overflow:auto;padding:16px;box-shadow:0 4px 20px rgba(0,0,0,.15)">
     <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
-      <b id="modalTitle" style="color:#ffd54f"></b>
-      <button id="modalClose" style="background:#37474f;border:0;color:#fff;border-radius:6px;padding:4px 10px;cursor:pointer">✕</button>
+      <b id="modalTitle" style="color:#8a6d1d"></b>
+      <button id="modalClose" style="background:#e7e9ec;border:1px solid #c9cdd3;color:#333;border-radius:4px;padding:4px 10px;cursor:pointer">✕</button>
     </div>
     <div id="modalBody"></div>
   </div>
 </div>'''
 
 new_css = '''
-  .vbtn { background:#3d5afe; border:0; color:#fff; padding:4px 8px; border-radius:5px; cursor:pointer; font-size:11px; margin:2px 0; }
-  .vbtn.alt { background:#37474f; }
-  .vbtn.adopt { background:#2e7d32; margin-top:6px; }
-  .vcard { border:1px solid #333a48; border-radius:8px; padding:10px; margin-bottom:10px; background:#1a1d24; }
-  .vhead { margin-bottom:6px; color:#e8e8e8; }
+  .vbtn { background:#e7e9ec; border:1px solid #c9cdd3; color:#333; padding:4px 8px; border-radius:4px; cursor:pointer; font-size:11px; margin:2px 0; }
+  .vbtn:hover { background:#d8dbe0; }
+  .vbtn.alt { background:#fff; }
+  .vbtn.adopt { background:#e8f0e8; border-color:#b7ccb7; margin-top:6px; }
+  .vcard { border:1px solid #d5d8dc; border-radius:6px; padding:10px; margin-bottom:10px; background:#fafbfc; }
+  .vhead { margin-bottom:6px; color:#333; }
   .vrow { display:flex; gap:8px; font-size:12px; margin:2px 0; }
-  .vkey { color:#78909c; width:70px; flex:none; }
-  .vval { color:#b0bec5; white-space:pre-wrap; word-break:break-all; }
+  .vkey { color:#777; width:70px; flex:none; }
+  .vval { color:#444; white-space:pre-wrap; word-break:break-all; }
 '''
 
 style_end = html.find('</style>')
-style = html[html.find('<style>'):style_end] + new_css + '\n</style>'
+base_css = '''
+body { font-family: "Microsoft YaHei", sans-serif; margin: 0; background: #f2f3f5; color: #333; }
+header { position: sticky; top: 0; background: #fff; padding: 10px 16px; display: flex; gap: 10px; align-items: center; z-index: 10; border-bottom: 1px solid #d5d8dc; flex-wrap: wrap; }
+header h1 { font-size: 16px; margin: 0; color: #222; }
+header button { background: #e7e9ec; border: 1px solid #c9cdd3; color: #333; padding: 7px 14px; border-radius: 4px; cursor: pointer; font-size: 13px; }
+header button:hover { background: #d8dbe0; }
+header button.alt { background: #fff; }
+header input { background: #fff; border: 1px solid #c9cdd3; color: #333; padding: 6px 8px; border-radius: 4px; }
+.wrap { padding: 14px; }
+table { border-collapse: collapse; width: 100%; font-size: 13px; table-layout: fixed; background: #fff; }
+col.c-ref { width: 190px; } col.c-fill { width: 240px; } col.c-fix { width: 110px; }
+th, td { border: 1px solid #d5d8dc; padding: 6px 8px; vertical-align: top; overflow: hidden; }
+th { background: #f7f8fa; position: sticky; top: 56px; color: #444; }
+th .rz { position: absolute; right: 0; top: 0; width: 7px; height: 100%; cursor: col-resize; background: transparent; z-index: 5; }
+th .rz:hover { background: #b9c2cc88; }
+td img { width: 84px; height: 64px; object-fit: cover; border-radius: 4px; display: block; }
+td input, td textarea, td select { background: #fff; border: 1px solid #c9cdd3; color: #333; border-radius: 4px; padding: 4px 6px; font-size: 12px; width: 100%; box-sizing: border-box; }
+td textarea { height: 44px; resize: vertical; }
+td input.num { width: 44px; }
+.zhname { font-weight: bold; color: #8a6d1d; }
+.enname { color: #777; font-size: 11px; }
+.desc { color: #555; font-size: 12px; }
+.mp { color: #1a6f9c; font-size: 12px; }
+.missing { opacity: 1; }
+.noicon img { background: #e9ebee; }
+'''
+style = base_css + new_css + '\n</style>'
 
 out = head + '\n' + style + '\n</head>\n<body>\n' + new_header + '\n<div class="wrap">\n<table id="tbl">\n' + new_table_head + '\n<tbody></tbody>\n</table>\n</div>\n' + modal_html + '\n<script>\n' + script + '\n</script>\n</body>\n</html>\n'
 io.open(OUT, 'w', encoding='utf-8').write(out)
