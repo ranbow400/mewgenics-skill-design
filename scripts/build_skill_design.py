@@ -87,22 +87,22 @@ function rowHtml(c, i) {
     : `<div style="width:84px;height:64px;display:flex;align-items:center;justify-content:center;background:#333a48;border-radius:4px;color:#78909c;font-size:11px">无图标</div>`;
   const nv = (c.versions || []).length;
   return `<tr data-i="${i}" class="${noIcon ? 'missing' : ''}">
-    <td class="noicon">${iconCell}</td>
-    <td><div class="zhname">${c.zh || '—'}</div><div class="enname">${c.en}${c.code ? ' · ' + c.code : ''}</div></td>
-    <td class="desc">${c.zhDesc || c.descEn}</td>
-    <td class="mp">${c.mp}${c.upgMana ? ' → ' + c.upgMana : ''}</td>
-    <td class="desc">${c.upgZh}</td>
-    <td><input class="num" data-f="cost" value="${c.cost}" placeholder="几费"></td>
-    <td><select data-f="type">
+    <td class="noicon ref" data-label="卡面">${iconCell}</td>
+    <td class="ref" data-label="技能"><div class="zhname">${c.zh || '—'}</div><div class="enname">${c.en}${c.code ? ' · ' + c.code : ''}</div></td>
+    <td class="desc ref" data-label="效果参考">${c.zhDesc || c.descEn}</td>
+    <td class="mp ref" data-label="蓝耗">${c.mp}${c.upgMana ? ' → ' + c.upgMana : ''}</td>
+    <td class="desc ref ref-last" data-label="升级后参考">${c.upgZh}</td>
+    <td class="diy diy-first" data-label="费用"><input class="num" data-f="cost" value="${c.cost}" placeholder="几费"></td>
+    <td class="diy" data-label="类型"><select data-f="type">
       ${['Attack','Skill','Power'].map(t => `<option ${t === c.type ? 'selected' : ''}>${t}</option>`).join('')}
     </select></td>
-    <td><select data-f="rarity">
+    <td class="diy" data-label="稀有度"><select data-f="rarity">
       ${['Common','Uncommon','Rare'].map(t => `<option ${t === c.rarity ? 'selected' : ''}>${t}</option>`).join('')}
     </select></td>
-    <td><textarea data-f="effPre">${c.effPre || ''}</textarea></td>
-    <td><textarea data-f="effUpg">${c.effUpg || ''}</textarea></td>
-    <td style="text-align:center"><input type="checkbox" data-f="done" ${c.done ? 'checked' : ''} style="width:auto"></td>
-    <td style="text-align:center;white-space:nowrap">
+    <td class="diy" data-label="升级前效果"><textarea data-f="effPre">${c.effPre || ''}</textarea></td>
+    <td class="diy" data-label="升级后效果"><textarea data-f="effUpg">${c.effUpg || ''}</textarea></td>
+    <td class="diy" data-label="已做" style="text-align:center"><input type="checkbox" data-f="done" ${c.done ? 'checked' : ''} style="width:auto"></td>
+    <td class="diy" data-label="版本/提交" style="text-align:center;white-space:nowrap">
       <button class="vbtn" data-act="view" title="查看该技能的所有设计版本">${nv ? '版本 ' + nv : '版本'}</button><br>
       <button class="vbtn alt" data-act="submit" title="把当前编辑作为新版本提交(生成 GitHub Issue 链接)">提交此版</button>
     </td>
@@ -348,8 +348,8 @@ new_table_head = '''<colgroup>
   <col class="c-fix"><col class="c-fix"><col class="c-fix"><col class="c-fill"><col class="c-fill"><col class="c-fix"><col class="c-fix">
 </colgroup>
 <thead><tr>
-  <th>卡面</th><th>技能（中/英）</th><th>效果（中文参考）</th><th>蓝耗(升级后)</th><th>升级后（中文参考）</th>
-  <th>费用</th><th>类型</th><th>稀有度</th><th>升级前效果（填）</th><th>升级后效果（填）</th><th>已做</th><th>版本/提交</th>
+  <th class="ref">卡面</th><th class="ref">技能（中/英）</th><th class="ref">效果（中文参考）</th><th class="ref">蓝耗(升级后)</th><th class="ref ref-last">升级后（中文参考）</th>
+  <th class="diy diy-first">费用</th><th class="diy">类型</th><th class="diy">稀有度</th><th class="diy">升级前效果（填）</th><th class="diy">升级后效果（填）</th><th class="diy">已做</th><th class="diy">版本/提交</th>
 </tr></thead>'''
 
 modal_html = '''<div id="modal" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.35);z-index:100;align-items:center;justify-content:center">
@@ -372,6 +372,30 @@ new_css = '''
   .vrow { display:flex; gap:8px; font-size:12px; margin:2px 0; }
   .vkey { color:#777; width:70px; flex:none; }
   .vval { color:#444; white-space:pre-wrap; word-break:break-all; }
+
+/* 手机端: 表格转卡片布局 */
+@media (max-width: 900px) {
+  header { gap: 6px; padding: 8px 10px; }
+  header h1 { font-size: 14px; }
+  header button { padding: 5px 8px; font-size: 12px; }
+  header input { padding: 5px 6px; font-size: 12px; width: 150px; }
+  .wrap { padding: 8px; }
+  table, tbody, tr, td { display: block; width: 100%; box-sizing: border-box; }
+  thead { display: none; }
+  #tbl tbody tr { margin-bottom: 12px; border: 1px solid #d5d8dc; border-radius: 8px; background: #fff; padding: 6px 8px; }
+  #tbl tbody td { display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; border: 0; border-bottom: 1px dashed #e3e6ea; padding: 5px 2px; }
+  #tbl tbody td:last-child { border-bottom: 0; }
+  #tbl tbody td::before { content: attr(data-label); flex: none; width: 76px; color: #888; font-size: 11px; padding-top: 3px; }
+  #tbl tbody td.ref { background: transparent; }
+  #tbl tbody td.diy-first, #tbl tbody td.ref-last { border-left: 0; border-right: 0; }
+  #tbl tbody td img { width: 56px; height: 43px; }
+  #tbl tbody td input, #tbl tbody td textarea, #tbl tbody td select { flex: 1; min-width: 0; font-size: 12px; }
+  #tbl tbody td textarea { height: 52px; }
+  #tbl tbody td input.num { width: 44px; flex: none; }
+  #tbl tbody td .vbtn { font-size: 12px; padding: 6px 12px; }
+  #tbl tbody td:has(.vbtn) { justify-content: flex-start; gap: 10px; }
+  .zhname { font-size: 13px; }
+}
 '''
 
 style_end = html.find('</style>')
@@ -385,9 +409,14 @@ header button.alt { background: #fff; }
 header input { background: #fff; border: 1px solid #c9cdd3; color: #333; padding: 6px 8px; border-radius: 4px; }
 .wrap { padding: 14px; }
 table { border-collapse: collapse; width: 100%; font-size: 13px; table-layout: fixed; background: #fff; }
-col.c-ref { width: 190px; } col.c-fill { width: 240px; } col.c-fix { width: 110px; }
-th, td { border: 1px solid #d5d8dc; padding: 6px 8px; vertical-align: top; overflow: hidden; }
-th { background: #f7f8fa; position: sticky; top: 56px; color: #444; }
+col.c-ref { width: 120px; } col.c-fill { width: 160px; } col.c-fix { width: 60px; }
+th, td { border: 1px solid #d5d8dc; padding: 4px 6px; vertical-align: top; overflow: hidden; }
+th { background: #f7f8fa; position: sticky; top: 56px; color: #444; font-size: 12px; }
+/* 参考区(前5列)浅灰底, DIY区(费用起)白底, 中间分隔线 */
+th.ref, td.ref { background: #eef0f2; }
+th.diy, td.diy { background: #fff; }
+th.diy-first, td.diy-first { border-left: 2px solid #aab2bd; }
+th.ref-last, td.ref-last { border-right: 2px solid #aab2bd; }
 th .rz { position: absolute; right: 0; top: 0; width: 7px; height: 100%; cursor: col-resize; background: transparent; z-index: 5; }
 th .rz:hover { background: #b9c2cc88; }
 td img { width: 84px; height: 64px; object-fit: cover; border-radius: 4px; display: block; }
