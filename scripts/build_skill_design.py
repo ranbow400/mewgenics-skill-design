@@ -41,12 +41,12 @@ const tbody = document.querySelector('#tbody, tbody');
 const count = document.getElementById('count');
 const state = { online: false, dataVersion: null, dataUpdated: null, author: '' };
 
-/* 在线加载 designs.json, 5 秒超时, 失败用内嵌 DATA */
+/* 在线加载 designs.json, 5 秒超时; 页面已先用内置数据渲染, 加载成功才切换 */
 async function loadOnline() {
-  const ctl = new AbortController();
-  const timer = setTimeout(() => ctl.abort(), 5000);
+  const ctl = typeof AbortController !== 'undefined' ? new AbortController() : null;
+  const timer = setTimeout(() => { if (ctl) ctl.abort(); }, 5000);
   try {
-    const r = await fetch('designs.json', { cache: 'no-cache', signal: ctl.signal });
+    const r = await fetch('designs.json', { cache: 'no-cache', signal: ctl ? ctl.signal : undefined });
     if (!r.ok) throw new Error(r.status);
     const d = await r.json();
     if (Array.isArray(d.skills) && d.skills.length) {
@@ -55,7 +55,7 @@ async function loadOnline() {
       state.dataVersion = d.version || null;
       state.dataUpdated = d.updated || null;
     }
-  } catch (e) { /* 超时/离线, 用内嵌 DATA */ }
+  } catch (e) { /* 超时/离线, 保持内置数据 */ }
   clearTimeout(timer);
   refreshSourceBadge();
   render(getFiltered());
@@ -308,9 +308,10 @@ window.addEventListener('resize', syncSticky);
   });
 })();
 
-/* 内嵌数据(兜底, 会被 designs.json 覆盖) */
+/* 内嵌数据(兜底, 会在线加载成功后覆盖) */
 let DATA = __DATA__;
-loadOnline();
+render(DATA);  /* 先用内置数据立即渲染, 不等网络 */
+loadOnline();  /* 在线数据后台加载, 成功自动切换 */
 '''
 
 # 替换 __DATA__ 为内嵌数组(紧凑)
@@ -330,7 +331,7 @@ new_header = '''<header>
   <button class="alt" onclick="exportTsv()">导出 TSV</button>
   <button class="alt" onclick="document.getElementById('fileInput').click()">导入 JSON</button>
   <input type="file" id="fileInput" accept=".json" style="display:none">
-  <span id="srcBadge" style="font-size:11px;color:#333;padding:3px 8px;border-radius:10px;background:#e7e9ec;border:1px solid #c9cdd3">加载中…</span>
+  <span id="srcBadge" style="font-size:11px;color:#333;padding:3px 8px;border-radius:10px;background:#e7e9ec;border:1px solid #c9cdd3">内置数据</span>
   <span id="dataVer" style="font-size:11px;color:#888"></span>
   <button class="alt" onclick="document.getElementById('help').style.display = document.getElementById('help').style.display === 'none' ? 'block' : 'none'">协作说明</button>
   <span id="count" style="color:#888"></span>
