@@ -1,8 +1,12 @@
 {
  "version": 4,
- "updated": "2026-08-28T21:07:23",
+ "updated": "2026-08-28T21:13:53",
  "repo": "ranbow400/mewgenics-skill-design",
- "note": "本文件为协作数据源。每行 skills[] 的 versions[] 记录其他人提交的设计版本(author/date/design字段)。合并 issue 提交: python scripts/merge_issue.py <json>",
+ "submit": {
+  "bin": "",
+  "key": ""
+ },
+ "note": "本文件为协作数据源。每行 skills[] 的 versions[] 记录其他人提交的设计版本(author/date/design字段)。submit 字段填 jsonbin 提交箱 bin id 和 master key 后，页面即可在线提交。合并提交: python scripts/sync_submissions.py",
  "skills": [
   {
    "en": "Barf Ball",

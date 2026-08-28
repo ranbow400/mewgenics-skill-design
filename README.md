@@ -15,20 +15,16 @@
 ## 协作流程（提交者）
 
 1. 打开在线页面，编辑某个技能行（费用/类型/稀有度/升级前后效果/已做）。
-2. 点该行「提交此版」→ 网页内填作者名和 GitHub Token 直接提交，不跳转。
-3. 首次使用需要创建 Fine-grained Token：GitHub → Settings → Developer settings → Personal access tokens → Fine-grained tokens → 仓库选 mewgenics-skill-design → 权限 Issues 选 Read and write。Token 只在浏览器本地用于调用 GitHub API，存在浏览器 localStorage。
-4. 提交内容会变成仓库里的一个 issue；维护者合并进 `designs.json` 后，页面上该技能出现新版本，所有人点「版本 N」都能看到。
+2. 点该行「提交此版」→ 网页内填名字直接提交，不需要任何账号，不跳转。
+3. 提交进入顶部「待合并」列表；维护者确认后合入 `designs.json`，自动成为该技能的版本，所有人点「版本 N」都能看到。
 
-## 协作流程（离线）
+## 维护者
 
-1. 页面「导出 JSON」→ 把文件发给别人。
-2. 对方改完「导入 JSON」（填作者名，导入内容记为版本）→ 再导出。
-3. 把最终 JSON 发回维护者，或在 GitHub 开 issue 贴内容。
-
-## 维护者合并
+提交箱（jsonbin）配置在 `designs.json` 的 `submit` 字段（bin/key）。页面在线提交的数据存在提交箱，维护者用脚本合并：
 
 ```
-python scripts/merge_issue.py submit.json
+python scripts/sync_submissions.py            # 拉取+合并+推送+清空
+python scripts/sync_submissions.py --dry-run  # 只预览
 ```
 
-版本号自动 +1，推送 main 后 Pages 自动更新。
+离线提交的文件用 `scripts/merge_issue.py` 合并。
