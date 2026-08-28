@@ -88,7 +88,7 @@ td input.num { width: 44px; }
 <div id="help" style="display:none;background:#fff;border-bottom:1px solid #d5d8dc;padding:10px 16px;font-size:12px;color:#555;line-height:1.8">
   <b style="color:#8a6d1d">协作流程</b><br>
   1. 页面数据来自仓库 <code>designs.json</code>（在线加载，加载失败或超时用内置数据）。<br>
-  2. 编辑某行（费用/类型/稀有度/效果）→ 点行内<b>「提交此版」</b> → 会打开 GitHub Issue 预填页，点提交即可。维护者合并后，其他人的页面自动出现该版本。<br>
+  2. 编辑某行（费用/类型/稀有度/效果）→ 点行内<b>「提交此版」</b> → 网页内填作者名和 GitHub Token 直接提交（不跳转）。首次需按提示创建 Fine-grained Token（Issues 写权限）。维护者合并后，其他人的页面自动出现该版本。<br>
   3. 想看某技能别人设计过什么版本：点行内<b>「版本 N」</b>，可逐版查看并「采用此版本」。<br>
   4. 离线协作：<b>导出 JSON</b> 发给别人 → 对方改完 <b>导入 JSON</b>（会作为新版本记录）→ 再导出发回或直接提交。<br>
   5. 仓库：<a href="https://github.com/ranbow400/mewgenics-skill-design" target="_blank" style="color:#1a6f9c">ranbow400/mewgenics-skill-design</a>
@@ -269,25 +269,74 @@ function adoptVersion(i, json, author, date) {
   alert('已把 ' + (author || '该') + ' 的设计应用到当前行。导出发送或直接提交新版本即可同步线上。');
 }
 
-/* ---------- 提交此版本 -> GitHub Issue 预填链接 ---------- */
+/* ---------- 提交此版本 -> 网页内直接提交(建 GitHub Issue) ---------- */
 function submitVersion(i) {
   const c = DATA[i];
-  const author = prompt('你的名字 / GitHub 用户名:', state.author || '');
-  if (!author) return;
-  state.author = author;
+  document.getElementById('modal').dataset.i = i;
+  const savedAuthor = localStorage.getItem('gh_author') || '';
+  const savedToken = localStorage.getItem('gh_token') || '';
+  openModal('提交设计: ' + (c.zh || c.en), `
+    <div class="vcard">
+      <div class="vrow"><span class="vkey">技能</span><span class="vval">${esc(c.zh || c.en)} (${esc(c.code)})</span></div>
+      <div class="vrow"><span class="vkey">作者</span><input id="subAuthor" value="${esc(savedAuthor)}" placeholder="你的名字 / GitHub 用户名" style="flex:1;min-width:0"></div>
+      <div class="vrow"><span class="vkey">Token</span><input id="subToken" type="password" value="${esc(savedToken)}" placeholder="GitHub Personal Access Token" style="flex:1;min-width:0"></div>
+      <div style="font-size:11px;color:#888;margin:6px 0 10px;line-height:1.6">
+        Token 只在你的浏览器本地调用 GitHub API 创建 issue，不会发往其他服务器，会保存在浏览器本地以便下次使用。
+        获取：GitHub → Settings → Developer settings → Personal access tokens → Fine-grained tokens →
+        仓库选 mewgenics-skill-design → 权限 Issues 选 Read and write → 生成后粘贴到这里。
+      </div>
+      <button class="vbtn" id="subGo" style="font-size:13px;padding:8px 18px">提交</button>
+      <span id="subResult" style="font-size:12px;margin-left:10px"></span>
+    </div>`);
+  document.getElementById('subGo').addEventListener('click', () => doSubmit(c));
+}
+
+async function doSubmit(c) {
+  const author = document.getElementById('subAuthor').value.trim();
+  const token = document.getElementById('subToken').value.trim();
+  const res = document.getElementById('subResult');
+  if (!author) { res.textContent = '请填作者名'; res.style.color = '#c62828'; return; }
+  if (!token) { res.textContent = '请填 Token'; res.style.color = '#c62828'; return; }
+  localStorage.setItem('gh_author', author);
+  localStorage.setItem('gh_token', token);
+  const tr = document.querySelector('#tbl tbody tr[data-i="' + document.getElementById('modal').dataset.i + '"]');
   const payload = {
     code: c.code, en: c.en, zh: c.zh, author: author,
     date: new Date().toISOString().slice(0, 10),
-    design: { cost: document.querySelector('#tbl tbody tr[data-i="' + i + '"] [data-f="cost"]').value,
-              type: document.querySelector('#tbl tbody tr[data-i="' + i + '"] [data-f="type"]').value,
-              rarity: document.querySelector('#tbl tbody tr[data-i="' + i + '"] [data-f="rarity"]').value,
-              effPre: document.querySelector('#tbl tbody tr[data-i="' + i + '"] [data-f="effPre"]').value,
-              effUpg: document.querySelector('#tbl tbody tr[data-i="' + i + '"] [data-f="effUpg"]').value,
-              done: document.querySelector('#tbl tbody tr[data-i="' + i + '"] [data-f="done"]').checked }
+    design: { cost: tr.querySelector('[data-f="cost"]').value,
+              type: tr.querySelector('[data-f="type"]').value,
+              rarity: tr.querySelector('[data-f="rarity"]').value,
+              effPre: tr.querySelector('[data-f="effPre"]').value,
+              effUpg: tr.querySelector('[data-f="effUpg"]').value,
+              done: tr.querySelector('[data-f="done"]').checked }
   };
-  const body = '提交者: ' + author + '\n技能: ' + (c.zh || c.en) + ' (' + c.code + ')\n\n```json\n' + JSON.stringify(payload) + '\n```\n\n---\n页面会自动合并此 issue 中的设计为本技能的一个新版本。';
-  const url = 'https://github.com/ranbow400/mewgenics-skill-design/issues/new?title=' + encodeURIComponent('设计提交: ' + (c.zh || c.en) + ' (' + c.code + ')') + '&body=' + encodeURIComponent(body);
-  window.open(url, '_blank');
+  const body = '提交者: ' + author + '\n技能: ' + (c.zh || c.en) + ' (' + c.code + ')\n\n```json\n' + JSON.stringify(payload) + '\n```';
+  res.textContent = '提交中…';
+  res.style.color = '#888';
+  try {
+    const r = await fetch('https://api.github.com/repos/ranbow400/mewgenics-skill-design/issues', {
+      method: 'POST',
+      headers: { 'Authorization': 'Bearer ' + token, 'Accept': 'application/vnd.github+json', 'Content-Type': 'application/json' },
+      body: JSON.stringify({ title: '设计提交: ' + (c.zh || c.en) + ' (' + c.code + ')', body: body })
+    });
+    if (r.ok) {
+      const d = await r.json();
+      res.textContent = '已提交 issue #' + d.number + '，等待维护者合并后所有人可见';
+      res.style.color = '#2e7d32';
+    } else if (r.status === 401) {
+      res.textContent = 'Token 无效，请检查';
+      res.style.color = '#c62828';
+    } else if (r.status === 403) {
+      res.textContent = '权限不足，需要该仓库 Issues 写权限';
+      res.style.color = '#c62828';
+    } else {
+      res.textContent = '提交失败: HTTP ' + r.status;
+      res.style.color = '#c62828';
+    }
+  } catch (e) {
+    res.textContent = '网络错误: ' + e.message;
+    res.style.color = '#c62828';
+  }
 }
 
 /* ---------- 导入本地 JSON(追加为版本) ---------- */

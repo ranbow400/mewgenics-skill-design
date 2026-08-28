@@ -15,8 +15,9 @@
 ## 协作流程（提交者）
 
 1. 打开在线页面，编辑某个技能行（费用/类型/稀有度/升级前后效果/已做）。
-2. 点该行「提交此版」→ 填名字 → 自动打开 GitHub Issue 预填页，直接提交。
-3. 等维护者合并进 `designs.json` 后，页面上该技能会出现新版本，所有人点「版本 N」都能看到。
+2. 点该行「提交此版」→ 网页内填作者名和 GitHub Token 直接提交，不跳转。
+3. 首次使用需要创建 Fine-grained Token：GitHub → Settings → Developer settings → Personal access tokens → Fine-grained tokens → 仓库选 mewgenics-skill-design → 权限 Issues 选 Read and write。Token 只在浏览器本地用于调用 GitHub API，存在浏览器 localStorage。
+4. 提交内容会变成仓库里的一个 issue；维护者合并进 `designs.json` 后，页面上该技能出现新版本，所有人点「版本 N」都能看到。
 
 ## 协作流程（离线）
 
