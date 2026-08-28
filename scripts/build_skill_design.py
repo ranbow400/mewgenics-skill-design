@@ -205,8 +205,8 @@ function adoptVersion(i, json, author, date) {
 }
 
 /* ---------- 提交此版本 -> 网页内直接提交(存云端提交箱) ---------- */
-/* 提交箱配置从 designs.json 的 submit 字段读取(bin/key), 维护者注册 jsonbin 后填入 */
-const submitCfg = { bin: '', key: '' };
+/* 提交箱配置: 构建时内嵌(build_skill_design.py 从 designs.json 的 submit 读取), 在线加载成功后再覆盖 */
+let submitCfg = __SUBMIT_CFG__;
 
 function submitVersion(i) {
   const c = DATA[i];
@@ -420,11 +420,13 @@ window.addEventListener('resize', syncSticky);
 /* 内嵌数据(兜底, 会在线加载成功后覆盖) */
 let DATA = __DATA__;
 render(DATA);  /* 先用内置数据立即渲染, 不等网络 */
-loadOnline();  /* 在线数据后台加载, 成功自动切换 */
-'''
+loadOnline();  /* 在线数据后台加载, 成功自动切换 */'''
 
-# 替换 __DATA__ 为内嵌数组(紧凑)
+# 替换 __DATA__ 为内嵌数组(紧凑), __SUBMIT_CFG__ 为内嵌提交箱配置
 script = script.replace('__DATA__', json.dumps(data, ensure_ascii=False))
+submit_json = json.dumps(designs.get('submit') or {"bin": "", "key": ""}, ensure_ascii=False)
+script = script.replace('__SUBMIT_CFG__', submit_json)
+print('submit cfg:', submit_json[:60])
 
 # 组装新 html: head 取到 <style> 之前, 全新 style 块, body 尾加 modal + 新 script
 head = html[:html.find('<style>')]
