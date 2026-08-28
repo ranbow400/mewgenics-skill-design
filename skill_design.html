@@ -294,9 +294,7 @@ function importJson() {
 /* ---------- 事件绑定 ---------- */
 document.getElementById('filter').addEventListener('input', e => render(getFiltered()));
 document.getElementById('hideDone').addEventListener('change', e => render(getFiltered()));
-document.getElementById('exportJson').addEventListener('click', exportJson);
-document.getElementById('exportTsv').addEventListener('click', exportTsv);
-document.getElementById('importJson').addEventListener('click', () => document.getElementById('fileInput').click());
+/* 导出/导入按钮走 onclick 属性, 不重复绑定 */
 document.getElementById('fileInput').addEventListener('change', importJson);
 document.getElementById('modalClose').addEventListener('click', closeModal);
 document.getElementById('modal').addEventListener('click', e => { if (e.target === document.getElementById('modal')) closeModal(); });
