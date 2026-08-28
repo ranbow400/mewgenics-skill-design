@@ -316,8 +316,8 @@ loadOnline();
 # 替换 __DATA__ 为内嵌数组(紧凑)
 script = script.replace('__DATA__', json.dumps(data, ensure_ascii=False))
 
-# 组装新 html: 保留原 head/style, 改 header 与 table 头, body 尾加 modal + 新 script
-head = html[:html.find('</head>')]
+# 组装新 html: head 取到 <style> 之前, 全新 style 块, body 尾加 modal + 新 script
+head = html[:html.find('<style>')]
 body_start = html.find('<body>')
 old_header_end = html.find('</header>', body_start)
 old_table = html[html.find('<colgroup>'):html.find('</thead>')]
@@ -376,7 +376,7 @@ new_css = '''
 '''
 
 style_end = html.find('</style>')
-base_css = '''
+base_css = '''<style>
 body { font-family: "Microsoft YaHei", sans-serif; margin: 0; background: #f2f3f5; color: #333; }
 header { position: sticky; top: 0; background: #fff; padding: 10px 16px; display: flex; gap: 10px; align-items: center; z-index: 10; border-bottom: 1px solid #d5d8dc; flex-wrap: wrap; }
 header h1 { font-size: 16px; margin: 0; color: #222; }
