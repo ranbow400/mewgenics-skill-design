@@ -440,8 +440,28 @@ async function saveBin(items, merged) {
   if (!pr.ok) throw new Error('HTTP ' + pr.status);
 }
 
+/* 维护者权限：合并/忽略需密码（页面只存 SHA-256，无明文） */
+const ADMIN_HASH = '17e465f52bd325ba42969679e002dbbbdd65b19f75d2f94d14786abc8626ae81';
+
+async function sha256hex(s) {
+  const buf = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(s));
+  return Array.from(new Uint8Array(buf)).map(b => b.toString(16).padStart(2, '0')).join('');
+}
+
+async function adminCheck() {
+  if (!ADMIN_HASH) return true;
+  const pw = prompt('维护者密码：');
+  if (!pw) return false;
+  try {
+    return (await sha256hex(pw)) === ADMIN_HASH;
+  } catch (e) {
+    return false;
+  }
+}
+
 /* 合并：提交内容成为该技能的一个版本（存入 merged，刷新不丢） */
 async function mergeSubmission(idx) {
+  if (!(await adminCheck())) { alert('密码错误或已取消，未合并'); return; }
   const btn = document.getElementById('subListBtn');
   let items = [], merged = [];
   try {
@@ -474,6 +494,7 @@ async function mergeSubmission(idx) {
 
 /* 忽略：从待合并列表移除，不合并 */
 async function discardSubmission(idx) {
+  if (!(await adminCheck())) { alert('密码错误或已取消'); return; }
   const btn = document.getElementById('subListBtn');
   let items = [], merged = [];
   try {
