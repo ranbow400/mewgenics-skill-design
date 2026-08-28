@@ -1,0 +1,567 @@
+[
+ {
+  "code": "Focus",
+  "title": "专注",
+  "search": "专注 增益 获得 +1 。"
+ },
+ {
+  "code": "Interchange",
+  "title": "互换",
+  "search": "互换 增益 将你的移动行动交换为 一次额外的基础攻击， 反之亦然。"
+ },
+ {
+  "code": "GainThorns",
+  "title": "亮爪",
+  "search": "亮爪 增益 获得 +1 荆棘。"
+ },
+ {
+  "code": "Desecrate",
+  "title": "亵渎",
+  "search": "亵渎 近战 摧毁一具尸体。"
+ },
+ {
+  "code": "Rest",
+  "title": "休息",
+  "search": "休息 增益 治疗部分生命值， 然后进入睡眠。"
+ },
+ {
+  "code": "RussianRoulette",
+  "title": "俄罗斯短毛猫轮盘",
+  "search": "俄罗斯短毛猫轮盘 增益 有 1/6 的几率杀死你。 如果没有， 获得随机属性 +1 和 1-2 枚金币。"
+ },
+ {
+  "code": "ManaDrain",
+  "title": "借用法力",
+  "search": "借用法力 近战 从一名盟友那里 窃取最多 5 点法力。 (每回合限施放一次。)"
+ },
+ {
+  "code": "StackTheDeck",
+  "title": "做牌",
+  "search": "做牌 增益 获得 +1 。"
+ },
+ {
+  "code": "GymMembership",
+  "title": "健身房会员",
+  "search": "健身房会员 增益 花费 5 金币，获得全属性提升。 (每回合限施放一次。)"
+ },
+ {
+  "code": "HoseOff",
+  "title": "冲洗",
+  "search": "冲洗 魔法 用水喷射一个单位， 驱散其减益效果并制造一个水坑。 （每场战斗限用一次。）"
+ },
+ {
+  "code": "ColdShoulder",
+  "title": "冷遇",
+  "search": "冷遇 魔法 造成 1 点冰霜伤害 并施加 1 层减速， 无限射程。"
+ },
+ {
+  "code": "Suppress",
+  "title": "击晕",
+  "search": "击晕 远程 向一个单位投掷石块， 对其施加晕眩。 （每场战斗限用一次。）"
+ },
+ {
+  "code": "Nerf",
+  "title": "削弱",
+  "search": "削弱 魔法 对一个单位施加 -1 伤害。"
+ },
+ {
+  "code": "Reflect",
+  "title": "反射",
+  "search": "反射 防御 将下一个击中你的投射物 反射回攻击者。"
+ },
+ {
+  "code": "Contort",
+  "title": "反转",
+  "search": "反转 增益 交换你的最高和最低属性。 （属性相同时随机选择）"
+ },
+ {
+  "code": "Spit",
+  "title": "吐口水",
+  "search": "吐口水 远程 无限射程的吐口水攻击， 造成 1 点伤害。"
+ },
+ {
+  "code": "Blow",
+  "title": "吹气",
+  "search": "吹气 魔法 将锥形范围内的单位击退 1 格。"
+ },
+ {
+  "code": "BarfBall",
+  "title": "呕吐球",
+  "search": "呕吐球 远程 一次远程攻击， 造成的伤害等于你 的一半， 向上取整。"
+ },
+ {
+  "code": "Purr",
+  "title": "呼噜",
+  "search": "呼噜 增益 移除你自己和所有相邻单位身上的 1 层随机减益效果。"
+ },
+ {
+  "code": "Hiss",
+  "title": "哈气",
+  "search": "哈气 魔法 相邻单位远离你。 你有 25% 的几率 对它们施加恐惧效果。"
+ },
+ {
+  "code": "Meow",
+  "title": "喵呜",
+  "search": "喵呜 增益 离你最近的盟友向你移动。"
+ },
+ {
+  "code": "SubwayRide",
+  "title": "地铁出行",
+  "search": "地铁出行 移动 花费 5 金币，传送到任意地块。 (每回合限施放一次。)"
+ },
+ {
+  "code": "Brace",
+  "title": "坚守",
+  "search": "坚守 防御 获得 +1 临时护甲， 直到你的下一回合。"
+ },
+ {
+  "code": "PathOfTheTank",
+  "title": "坦克之路",
+  "search": "坦克之路 增益 将此法术永久变形为 一个随机坦克法术。 仅当你的生命值不高于 5 时可施放。"
+ },
+ {
+  "code": "BoostSpellRange",
+  "title": "增幅",
+  "search": "增幅 增益 获得 +1 魔法伤害， 直到回合结束。"
+ },
+ {
+  "code": "Taint",
+  "title": "增殖",
+  "search": "增殖 近战 使一个单位的中毒、 流血和燃烧层数翻倍。 （每场战斗限用一次。）"
+ },
+ {
+  "code": "Endeavor",
+  "title": "复苏之风",
+  "search": "复苏之风 增益 刷新你的基础攻击、移动、 武器和饰品行动。 （每场战斗限用一次。）"
+ },
+ {
+  "code": "BrainDrainMagicMissile",
+  "title": "大脑飞弹",
+  "search": "大脑飞弹 近战 发射一枚无限射程且必中的投射物。"
+ },
+ {
+  "code": "Brainstorm",
+  "title": "头脑风暴",
+  "search": "头脑风暴 增益 使你其他法术的 法力消耗减少 1 点。"
+ },
+ {
+  "code": "PathOfTheJester",
+  "title": "小丑之路",
+  "search": "小丑之路 增益 获得 10 个随机属性提升和 5 个随机属性下降， 然后将此法术永久变形为 一个随机职业法术。"
+ },
+ {
+  "code": "PissYourself",
+  "title": "小号",
+  "search": "小号 其他 在你自己周围的区域 生成“水”地块。"
+ },
+ {
+  "code": "MiniHook",
+  "title": "小钩爪",
+  "search": "小钩爪 远程 将一个单位拉向你。"
+ },
+ {
+  "code": "Gassy_AssBlast",
+  "title": "屁股冲击",
+  "search": "屁股冲击 近战 击退所有相邻单位。"
+ },
+ {
+  "code": "ButtScoot",
+  "title": "屁股滑行",
+  "search": "屁股滑行 移动 移动 1 个地块， 在身后留下一个蛆虫使魔。"
+ },
+ {
+  "code": "PathOfTheButcher",
+  "title": "屠夫之路",
+  "search": "屠夫之路 近战 收集一个相邻的食物掉落物， 然后此法术将永久变为 一个随机屠夫法术。"
+ },
+ {
+  "code": "PathOfTheTinkerer",
+  "title": "工匠之路",
+  "search": "工匠之路 增益 摧毁你的武器， 然后此法术将永久变为 一个随机工匠法术。"
+ },
+ {
+  "code": "Reach",
+  "title": "延伸",
+  "search": "延伸 增益 你的下一次基础攻击 获得 +1 射程。"
+ },
+ {
+  "code": "PathOfTheDruid",
+  "title": "德鲁伊之路",
+  "search": "德鲁伊之路 增益 在你站立的地块上种植花朵， 然后此法术将永久变为 一个随机德鲁伊法术。 仅当你站在草地地块上时可施放。"
+ },
+ {
+  "code": "CPR",
+  "title": "心肺复苏",
+  "search": "心肺复苏 治疗 复活一具相邻的尸体， 使其拥有 1 点生命值。"
+ },
+ {
+  "code": "PathOfTheFighter",
+  "title": "战士之路",
+  "search": "战士之路 增益 你的 变为 0 直到战斗结束， 然后此法术将永久变为 一个随机战士法术。"
+ },
+ {
+  "code": "DollUp",
+  "title": "打扮",
+  "search": "打扮 增益 获得 +1 。"
+ },
+ {
+  "code": "FindARock",
+  "title": "找块石头",
+  "search": "找块石头 其他 挖出一块小石头。"
+ },
+ {
+  "code": "ScuffItOff",
+  "title": "抖落伤痛",
+  "search": "抖落伤痛 增益 治疗自己，恢复量等于你 的一半， 向上取整。"
+ },
+ {
+  "code": "SoothingGlow",
+  "title": "抚慰之光",
+  "search": "抚慰之光 增益 治疗你自己 1 点。"
+ },
+ {
+  "code": "Smack",
+  "title": "拍击",
+  "search": "拍击 近战 一次虚弱的近战攻击。"
+ },
+ {
+  "code": "Swat",
+  "title": "拍打",
+  "search": "拍打 近战 将一个单位击退 3 格。"
+ },
+ {
+  "code": "BreakWeb",
+  "title": "挣脱",
+  "search": "挣脱 增益 挣脱缠住你的东西。"
+ },
+ {
+  "code": "BasicMetronome",
+  "title": "挥指",
+  "search": "挥指 未知 施放一个随机法术。"
+ },
+ {
+  "code": "Metronome",
+  "title": "挥指",
+  "search": "挥指 未知 施放一个随机法术。"
+ },
+ {
+  "code": "Dump",
+  "title": "排便",
+  "search": "排便 防御 在相邻地块上生成一坨便便。"
+ },
+ {
+  "code": "Infiltrate",
+  "title": "掘进",
+  "search": "掘进 移动 挖掘至任意空地块。 （每场战斗限用一次。）"
+ },
+ {
+  "code": "Metabolize",
+  "title": "新陈代谢",
+  "search": "新陈代谢 增益 获得 +1 。"
+ },
+ {
+  "code": "Sunburn",
+  "title": "晒伤",
+  "search": "晒伤 魔法 施加 1 层燃烧和 1 层致盲， 无限射程。"
+ },
+ {
+  "code": "Block",
+  "title": "格挡",
+  "search": "格挡 防御 获得 +2 。"
+ },
+ {
+  "code": "Copycat",
+  "title": "模仿",
+  "search": "模仿 其他 此法术是友方猫咪 最近施放法术的复制。"
+ },
+ {
+  "code": "PathOfTheMonk",
+  "title": "武僧之路",
+  "search": "武僧之路 增益 获得全属性下降， 然后此法术将永久变为 一个随机武僧法术。"
+ },
+ {
+  "code": "PathOfTheNecromancer",
+  "title": "死灵法师之路",
+  "search": "死灵法师之路 近战 摧毁一具尸体， 然后此法术将永久变为 一个随机死灵法师法术。"
+ },
+ {
+  "code": "Ponder",
+  "title": "沉思",
+  "search": "沉思 增益 获得 +1 。"
+ },
+ {
+  "code": "HealBolt",
+  "title": "治愈闪电",
+  "search": "治愈闪电 魔法 一道治疗并有几率 造成晕眩的闪电。"
+ },
+ {
+  "code": "PathOfTheMage",
+  "title": "法师之路",
+  "search": "法师之路 增益 将此法术永久变形为 一个随机法师法术。"
+ },
+ {
+  "code": "WasteTime",
+  "title": "浪费时间",
+  "search": "浪费时间 增益 什么也不做。"
+ },
+ {
+  "code": "Confusion",
+  "title": "混乱",
+  "search": "混乱 魔法 对一个单位施加 2 层混乱。"
+ },
+ {
+  "code": "BurgeoningBarrier",
+  "title": "滋长屏障",
+  "search": "滋长屏障 增益 获得 {v0} 。 每回合结束时， 此法术的 增加 2 点。 （每场战斗限用一次。）"
+ },
+ {
+  "code": "BurgeoningBlast",
+  "title": "滋长爆裂",
+  "search": "滋长爆裂 魔法 造成 {v0} 点伤害的法术。 每回合结束时， 此法术的伤害增加 2 点。 （每场战斗限用一次。）"
+ },
+ {
+  "code": "BurgeoningBattery",
+  "title": "滋长电池",
+  "search": "滋长电池 增益 获得 {v0} 点法力值。 每回合结束时， 此法术的法力值获取量增加 2 点。 （每场战斗限用一次。）"
+ },
+ {
+  "code": "Rouse",
+  "title": "激励",
+  "search": "激励 近战 给予一个相邻单位 +2 充能。 （每回合限用一次。）"
+ },
+ {
+  "code": "DexterousHit",
+  "title": "灵巧一击",
+  "search": "灵巧一击 近战 一次近战攻击， 造成的伤害等于你 的一半， 向上取整。"
+ },
+ {
+  "code": "PathOfThePsychic",
+  "title": "灵能者之路",
+  "search": "灵能者之路 增益 此法术将永久变为 一个随机灵能者法术。 仅当你法力值已满时可施放。"
+ },
+ {
+  "code": "SoulReap",
+  "title": "灵魂收割",
+  "search": "灵魂收割 魔法 对 5 个地块内的某个单位 造成 1 点伤害。 如果将其击杀， 获得 5 点法力。"
+ },
+ {
+  "code": "Toast",
+  "title": "烘烤",
+  "search": "烘烤 魔法 对一名相邻单位施加 1 层燃烧。"
+ },
+ {
+  "code": "BBQ",
+  "title": "烧烤",
+  "search": "烧烤 召唤 生成一个熟肉掉落物。"
+ },
+ {
+  "code": "PushMove",
+  "title": "蒸汽压路机",
+  "search": "蒸汽压路机 移动 践踏 1 个地块。"
+ },
+ {
+  "code": "Burst",
+  "title": "爆发",
+  "search": "爆发 魔法 发射一道魔法冲击。 （每场战斗限用一次。）"
+ },
+ {
+  "code": "PathOfTheCleric",
+  "title": "牧师之路",
+  "search": "牧师之路 近战 让一个敌人获得全属性提升并完全治愈它， 然后此法术将永久变为 一个随机牧师法术。"
+ },
+ {
+  "code": "Hunt",
+  "title": "狩猎",
+  "search": "狩猎 远程 一次远程攻击， 将任何被击杀的目标变为肉块。"
+ },
+ {
+  "code": "PathOfTheHunter",
+  "title": "猎人之路",
+  "search": "猎人之路 远程 一次抛射攻击，造成 1 点伤害。 如果杀死敌人，此法术将永久变为 一个随机猎人法术。"
+ },
+ {
+  "code": "CatNap",
+  "title": "猫咪打盹",
+  "search": "猫咪打盹 增益 移除你的所有减益效果， 然后进入睡眠。"
+ },
+ {
+  "code": "Groom",
+  "title": "理毛",
+  "search": "理毛 治疗 移除你自己或一个相邻单位 身上的所有减益效果。"
+ },
+ {
+  "code": "Zap",
+  "title": "电击",
+  "search": "电击 魔法 造成 1 点电击伤害，无限射程。"
+ },
+ {
+  "code": "Itch",
+  "title": "瘙痒",
+  "search": "瘙痒 增益 对自己造成 1 点伤害。 50% 几率生成一只友方跳蚤。"
+ },
+ {
+  "code": "PathOfTheThief",
+  "title": "盗贼之路",
+  "search": "盗贼之路 远程 一次直线射击攻击， 造成 1 点伤害。 如果产生暴击， 此法术将永久变为 一个随机盗贼法术。"
+ },
+ {
+  "code": "VetVisit",
+  "title": "看兽医",
+  "search": "看兽医 增益 花费 5 金币，治疗 10 点生命值。 (每回合限施放一次。)"
+ },
+ {
+  "code": "LookAtMe",
+  "title": "看我！",
+  "search": "看我！ 魔法 让每个单位转向面对你。"
+ },
+ {
+  "code": "MiniDistract",
+  "title": "看那边！",
+  "search": "看那边！ 其他 相邻单位转过身背对你。"
+ },
+ {
+  "code": "BreakShortCircuit",
+  "title": "破坏回路",
+  "search": "破坏回路 增益 摆脱短路状态"
+ },
+ {
+  "code": "SharpenClaws",
+  "title": "磨爪",
+  "search": "磨爪 增益 获得 +1 。"
+ },
+ {
+  "code": "ForbiddenFart",
+  "title": "禁忌之屁",
+  "search": "禁忌之屁 魔法 对附近单位造成伤害 并施加 4 层中毒和击飞。 施放此法术会有永久性后果…… (每回合限施放一次。)"
+ },
+ {
+  "code": "Flex",
+  "title": "秀肌肉",
+  "search": "秀肌肉 防御 获得 +1 临时护甲， 直到你的下一回合， 并对每个相邻单位造成 1 点击退。"
+ },
+ {
+  "code": "Shift",
+  "title": "移位",
+  "search": "移位 移动 与一个相邻单位交换位置。 （每回合限用一次。）"
+ },
+ {
+  "code": "SlipThrough",
+  "title": "穿梭",
+  "search": "穿梭 移动 沿对角线翻滚最多 2 个地块。"
+ },
+ {
+  "code": "PokeWound",
+  "title": "突发恶疾",
+  "search": "突发恶疾 近战 触发一个单位身上的中毒、 流血和燃烧效果。"
+ },
+ {
+  "code": "Trip",
+  "title": "绊倒",
+  "search": "绊倒 减益 定身一个相邻单位。 该效果对 boss 单位和大 型敌人只有 25% 的成功率。"
+ },
+ {
+  "code": "Reduce",
+  "title": "缩小",
+  "search": "缩小 增益 获得 +20% 闪避率、 +4 和 -2 伤害。 （每场战斗限用一次。）"
+ },
+ {
+  "code": "FeatherFeet",
+  "title": "羽步",
+  "search": "羽步 增益 获得 +1 。"
+ },
+ {
+  "code": "Roll",
+  "title": "翻滚",
+  "search": "翻滚 移动 沿直线翻滚 最多 3 个地块。"
+ },
+ {
+  "code": "LotteryShottery",
+  "title": "老鼠轮盘",
+  "search": "老鼠轮盘 远程 对一个随机单位造成 1 点伤害。 如果你杀死了该单位， 获得一个额外回合。"
+ },
+ {
+  "code": "LickHeal",
+  "title": "舔舐",
+  "search": "舔舐 治疗 治疗一个相邻单位 2 点生命值。"
+ },
+ {
+  "code": "PathOfTheVoid",
+  "title": "虚空之路",
+  "search": "虚空之路 增益 在你的额外法术栏位中 生成一个随机无项圈法术。"
+ },
+ {
+  "code": "PlayDead",
+  "title": "装死",
+  "search": "装死 防御 让自己倒地。你不会受伤。"
+ },
+ {
+  "code": "Donate",
+  "title": "许愿",
+  "search": "许愿 其他 花费一枚金币， 在随机地块上生成一个随机掉落物。 （每回合限用一次。）"
+ },
+ {
+  "code": "BuyCatnip",
+  "title": "购买猫薄荷",
+  "search": "购买猫薄荷 增益 花费 5 金币，获得 10 点法力值。 (每回合限施放一次。)"
+ },
+ {
+  "code": "Gamble",
+  "title": "赌博",
+  "search": "赌博 增益 获得 +2% 暴击率。 如果你下一次攻击暴击， 造成 +100% 伤害 并生成金币。"
+ },
+ {
+  "code": "SuperCrateBox",
+  "title": "超级板条箱",
+  "search": "超级板条箱 召唤 在相邻地块上生成一个木箱。"
+ },
+ {
+  "code": "Knead",
+  "title": "踩奶",
+  "search": "踩奶 增益 对另一个单位踩奶。 盟友获得 +1 伤害， 敌人获得 1 层虚弱。"
+ },
+ {
+  "code": "PrepareToJump",
+  "title": "蹦跳",
+  "search": "蹦跳 移动 蹦跳至最多 2 个地块外。"
+ },
+ {
+  "code": "Step",
+  "title": "迈步",
+  "search": "迈步 移动 移动一格。 （每回合限用一次。）"
+ },
+ {
+  "code": "EnterMech",
+  "title": "进入机甲",
+  "search": "进入机甲 近战 进入机甲套装。"
+ },
+ {
+  "code": "Landscape",
+  "title": "造景",
+  "search": "造景 近战 将一个相邻地块 变为小草地地块。"
+ },
+ {
+  "code": "Till",
+  "title": "随机化",
+  "search": "随机化 近战 在任意位置生成一个随机地块。"
+ },
+ {
+  "code": "HireHitman",
+  "title": "雇佣杀手",
+  "search": "雇佣杀手 召唤 花费 7 金币，召唤一个赏金猎人。 (每回合限施放一次。)"
+ },
+ {
+  "code": "Snacks",
+  "title": "零食",
+  "search": "零食 魔法 治疗你自己或 4 个地块内的 另一个单位 1 点生命值。"
+ },
+ {
+  "code": "BlowKiss",
+  "title": "飞吻",
+  "search": "飞吻 魔法 治疗另一名单位 1 点生命值， 无限射程。"
+ },
+ {
+  "code": "Dart",
+  "title": "飞镖",
+  "search": "飞镖 远程 投掷一根无视护盾的钉子。"
+ }
+]

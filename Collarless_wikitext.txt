@@ -1,0 +1,161 @@
+{{Infobox/Class
+| Id = 1
+| Description = It's a cat!
+| Buffs =
+| Debuffs =
+| Unlock = default
+}}
+
+{{Quote|A collarless cat when embarking on an adventure|Meow meow meow!}}
+
+'''Collarless''' is the [[class]] all cats have before they are given collars.
+
+== Overview ==
+Collarless cats receive no positive or negative stat changes, and only learn Collarless abilities, which are also offered to all other classes. Therefore Collarless cats have the smallest ability pool of all classes. Although it can be difficult for Collarless cats to fill a particular role, Collarless abilities serve a wide variety of purposes including offense, support, and utility, and typically interact with fundamental mechanics that are generally useful for all cats.
+
+The Collarless class is unique in that it can be "assigned" to cats without the use of a collar, allowing the player to depart with any number of Collarless cats. This is not possible for other classes unless the player buys a [[Blank Collar]] from [[Tracy]] or departs with a cat that already has a collar—possible if, for example, a cat is transformed into a kitten mid-adventure, allowing it to return home without being retired.
+
+=== Basic Attacks ===
+Collarless cats are unusual for having three different possible starting attacks. These are the Melee Attack (akin to the [[Fighter|Fighter's]] Basic Attack), the Short Shot (which travels in a straight line and is interrupted by obstacles), and the Short Lobbed Shot (which flies over obstacles in an arc).
+
+=== Ability Groups ===
+While Collarless cats don't fit any specific role, collarless abilities still fit into certain groups.
+
+; Simple Stat Up
+: Abilities that simply grant +1 in a stat.
+: {{a|Sharpen Claws}}, {{a|Focus}}, {{a|Metabolize}}, {{a|Feather Feet}}, {{a|Ponder}}, {{a|Doll Up}}, {{a|Stack the Deck}}
+
+; Simple Elemental Spell
+: Abilities that apply an element with 1 damage at infinite range.
+: {{a|Sunburn}}, {{a|Spit}}, {{a|Cold Shoulder}}, {{a|Zap}}, {{a|Blow Kiss}}
+
+; Spending Money
+: Spells which cost {{icon|Coin}}
+: {{a|Gym Membership}}, {{a|Vet Visit}}, {{a|Buy Catnip}}, {{a|Subway Ride}}, {{a|Make a Wish}}, {{a|Hire Hitman}}
+
+; Alternative Scaling
+: Abilities that scale with a different stat than usual
+: {{a|Shrug It Off}}, {{a|Dexterous Hit}}, {{a|Barf Ball}}
+
+; Burgeoning
+: Abilities that become more powerful over time, but can only be used once per battle.
+: {{a|Burgeoning Blast}}, {{a|Burgeoning Battery}}, {{a|Burgeoning Barrier}}
+
+; Paths and Soul
+: Path Spells that transform into a spell of another class, after meeting a certain condition. All unlocked by the respective class by beating the {{ch|Core}}
+: Soul Passives that grant the stat changes of a class, and allow that classes abilities as level up options. All unlocked by the respective class by beating the {{ch|Moon}}
+
+=== Tips ===
+* Collarless cats find it much easier to fill their spell slots with Collarless active abilities, which allow them to get the full benefit from {{i|Mind Stone}} and {{i|Steven Stone}}. Similarly, other classes don't get the mana reduction from {{i|Skill Stone}} on their Collarless abilities, but Collarless cats do.
+* Many Collarless passive abilities are useful on their own, but can be combined with {{p|Skill Share}} to share with all other adventuring cats, effectively giving each party member a third passive ability slot. The upgraded version of {{p|Skill Share}} is useful for breeding: it guarantees the other passive is inherited by all of the cat's children.
+* Collarless cats can access the abilities of other classes in a few ways:
+** The "[Class]'s Soul" passive abilities (e.g. {{p|Mage's Soul}})
+** The "Path of the [Class]" active abilities (e.g. {{a|Path of the Fighter}})
+** Items such as {{i|Crown of Chaos}}, {{i|Chaos Controller}} or {{i|Chaos Device}} which offer abilities from any class on levelup.
+** Certain birth defects that offer abilities from the four basic classes (e.g. {{mut|tail.704}}).
+
+=== Stray Cat Events ===
+[[Events]] mid-adventure can add new cats to the team. They are always Collarless.
+
+Cats from events will always be level 0, meaning they lack their first passive ability and their second active ability. Their first level up will randomly grant a passive and allow the choice of an active ability from a standard array of four. Because they also get a level-up stat bonus at Level 1, something standard cats do not get, event cats are marginally more powerful.
+
+Cats from events do ''not'' qualify for completion marks, nor for their corresponding unlocks. Accordingly, they do not prevent solo-cat achievements. They do return to the [[House]] like a standard cat at the end of an adventure, however.
+
+If the party has four cats, a fifth "bonus" cat cannot increase their level and cannot be equipped with [[items]] until a slot in the 4 cat party opens up. Non-party bonus cats will not be retired upon return to the house and will be eligible to go on another run.
+
+The {{Event|A cat!}} event will act as a bonus life, and can only occur after a cat of the party has permanently died. It has a 50% chance to occur on any {{icon|Event Node}} after this happens, and can only occur once per adventure. It will also grant a {{i|Neverstone}}.
+
+Other events that grant additional cats can occur any time and multiple times in a run:
+* {{Event|Blessing!|"The cat makes a new friend!" blessing}}.
+* {{Event|Dead Cat}}
+* {{Event|Cats in Heat}}
+
+== Abilities ==
+Other classes can have Collarless Abilities offered to them when leveling up. Roughly one-in-four options provided will be Collarless (lower Luck means more Collarless abilities){{Citation needed}}.
+
+=== Basic Attacks ===
+{| class="wikitable"
+! colspan="2" | Name
+! Status&nbsp;Dealt
+! Description
+|-
+{{BasicAttack/Entry|Melee Attack}}
+{{BasicAttack/Entry|Short Shot}}
+{{BasicAttack/Entry|Short Lobbed Shot}}
+|}
+*<sub>Melee Attack effectively has a weight of 2, making it 50/50 chance of melee or ranged basic attack.</sub>
+
+=== Active Abilities===
+{{Class Abilities|Collarless|Active}}
+
+=== Passive Abilities ===
+{{Class Abilities|Collarless|Passive}}
+
+===Supplementary Abilities===
+{{Class Abilities|{{PAGENAME}}|Active|Search=Sub}}
+
+==Unlocks==
+Collarless cats encountered mid-adventure do not award unlocks. Only cats present at the start of an adventure count for Collarless unlocks.
+
+Unlike other classes, {{class|Collarless}} has an additional set of unlocks for completing adventures with a team of only Collarless cats. For these, the player must depart with at least ''one'' {{class|Collarless}} cat, and no cats of any other class. A single {{class|Collarless}} cat will count.
+{| class="wikitable" id="calc-table" style="display:inline-block;margin-right:10px"
+|-
+! Reward !! Condition
+|- 
+| {{a|Metronome}}||Complete {{Chapter|Caves}} with a {{class|Collarless}} cat.
+|- 
+| {{p|Skill Share}}||Complete {{Chapter|Boneyard}} with a {{class|Collarless}} cat.
+|- 
+| {{a|Path Of The Void}}||Complete {{Chapter|Core}} with a {{class|Collarless}} cat.
+|- 
+| {{p|Void Soul}}||Complete {{Chapter|Moon}} with a {{class|Collarless}} cat.
+|- 
+| {{i|Lil' Kitty}}||Complete {{Chapter|Jurassic}} with a {{class|Collarless}} cat.
+|- 
+| {{i|Ball of Yarn}}||Complete {{Chapter|End}} with a {{class|Collarless}} cat.
+|- 
+| {{i|Normal Ears}}|| Defeat {{b|Throbbing King|The King}} with a {{class|Collarless}} cat.
+|- 
+| {{i|Ordinary Whiskers}}|| Defeat {{b|Chaos!}} with a {{class|Collarless}} cat.
+|- 
+| {{i|Mundane Collar}}||Defeat {{b|The Creator}} with a {{class|Collarless}} cat.
+|- 
+| {{i|Skill Split}}||Complete all areas with a {{class|Collarless}} cat.
+|- 
+| {{i|Copycat Hat}}|| Defeat {{b|Throbbing King|The King}} with only {{class|Collarless}} cats.
+|- 
+| {{i|Copycat Mask}}|| Defeat {{b|Chaos!}} with only {{class|Collarless}} cats.
+|- 
+| {{i|Copycat Scarf}}||Defeat {{b|The Creator}} with only {{class|Collarless}} cats.
+|- 
+|}
+
+== Gallery ==
+<tabber>
+Assets=
+<gallery perrow=6 widths=150px heights=150px>
+CLASS_Collarless_Idle.gif|Idle
+CLASS_Collarless_Start.gif|Turn start
+CLASS_Collarless_Victory.gif|Victory
+</gallery>
+
+|-|
+</tabber>
+
+== Quotes ==
+See [[Cats/Quotes]].
+
+== Trivia ==
+* Collarless is a portmanteau of "collar" and "colorless," the latter being a reference to colorless mana in Magic: The Gathering.
+** Collarless is referred to as <code>Colorless</code> internally.
+** For this reason, {{b|Pebbles}} appears to be the collarless equivalent of class-themed mini-bosses such as {{mb|Fenrir}} for {{Class|Hunter}} and {{mb|Magnus}} for {{Class|Fighter}}, as his internal nickname is Colorless Cat.
+* The only [[Elements]] missing from Collarless abilities are {{el|Earth}}, {{el|Gravity}}, and {{el|Explosion}}, tying it with {{class|Mage}} for the class with the most elemental diversity.
+* When starting an adventure, other classes receive from a list of 10 starter abilities. Collarless is unique in that ''every'' Collarless draftable ability is a starter ability, meaning technically there are 108 Collarless starter abilities.
+** {{class|Jester}} is the only other class that has no starter abilities, instead having a list of starter main attacks.
+* The symbol on the {{cl|Collarless}} class collar is the letter {{wikipedia|Ø_(disambiguation)|Ø}}, a letter that originates from Scandinavian languages. It is also called a {{wikipedia|null sign}}, and is often used to represent an {{wikipedia|empty set}} in mathematics.
+
+{{Navbox Class}}
+
+[[Category:Classes]]
+
+[[es:Sin collar]]

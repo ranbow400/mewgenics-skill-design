@@ -1,0 +1,478 @@
+Collarless
+It's a cat!
+Stat Modifiers
+Buffs
+None
+Debuffs
+None
+Level up Stats
+Any Stat
+Details
+Collar
+“
+Meow meow meow!
+— A collarless cat when embarking on an adventure
+Collarless is the class all cats have before they are given collars.
+Contents
+1 Overview
+1.1 Basic Attacks
+1.2 Ability Groups
+1.3 Tips
+1.4 Stray Cat Events
+2 Abilities
+2.1 Basic Attacks
+2.2 Active Abilities
+2.3 Passive Abilities
+2.4 Supplementary Abilities
+3 Unlocks
+4 Gallery
+5 Quotes
+6 Trivia
+Overview[edit | edit source]
+Collarless cats receive no positive or negative stat changes, and only learn Collarless abilities, which are also offered to all other classes. Therefore Collarless cats have the smallest ability pool of all classes. Although it can be difficult for Collarless cats to fill a particular role, Collarless abilities serve a wide variety of purposes including offense, support, and utility, and typically interact with fundamental mechanics that are generally useful for all cats.
+The Collarless class is unique in that it can be "assigned" to cats without the use of a collar, allowing the player to depart with any number of Collarless cats. This is not possible for other classes unless the player buys a Blank Collar from Tracy or departs with a cat that already has a collar—possible if, for example, a cat is transformed into a kitten mid-adventure, allowing it to return home without being retired.
+Basic Attacks[edit | edit source]
+Collarless cats are unusual for having three different possible starting attacks. These are the Melee Attack (akin to the Fighter's Basic Attack), the Short Shot (which travels in a straight line and is interrupted by obstacles), and the Short Lobbed Shot (which flies over obstacles in an arc).
+Ability Groups[edit | edit source]
+While Collarless cats don't fit any specific role, collarless abilities still fit into certain groups.
+Simple Stat Up
+Abilities that simply grant +1 in a stat.
+.mw-parser-output .icon-border{position:relative;display:inline-block;line-height:0;font-size:0}.mw-parser-output .icon-border img{position:relative;z-index:1;padding-right:0px}.mw-parser-output .icon-border::before{content:"";position:absolute;inset:-1.1px;background-color:#c2c2c2;border-radius:2px;z-index:0;pointer-events:none}.mw-parser-output .icon-border-Collarless::before{background-color:#c2c2c2}.mw-parser-output .icon-border-Fighter::before{background-color:#c85c5c}.mw-parser-output .icon-border-Hunter::before{background-color:#2d7b1f}.mw-parser-output .icon-border-Mage::before{background-color:#7a8dff}.mw-parser-output .icon-border-Tank::before{background-color:#a98224}.mw-parser-output .icon-border-Cleric::before{background-color:#fefcfc}.mw-parser-output .icon-border-Thief::before{background-color:#FFFBB5}.mw-parser-output .icon-border-Necromancer::before{background-color:#000000}.mw-parser-output .icon-border-Tinkerer::before{background-color:#aaf4e1}.mw-parser-output .icon-border-Butcher::before{background-color:#ce2241}.mw-parser-output .icon-border-Druid::before{background-color:#74584c}.mw-parser-output .icon-border-Psychic::before{background-color:#602aa2}.mw-parser-output .icon-border-Monk::before{background-color:#787878}.mw-parser-output .icon-border-Jester::before{background:repeating-linear-gradient(135deg,#f8aeb8 0px,#f8ccae 8px,#f8f1ae 16px,#b1c88c 24px,#aef8f4 32px,#aecff8 40px,#c0aef8 48px,#f8aedf 56px);background-attachment:fixed}.mw-parser-output .icon-border-Disorder::before{background-color:#3c2a23}Sharpen Claws Sharpen Claws Gain +1 Strength. , Focus Focus Gain +1 Dexterity. , Metabolize Metabolize Gain +1 Constitution. , Feather Feet Feather Feet Gain +1 Speed. , Ponder Ponder Gain +1 Intelligence. , Doll Up Doll Up Gain +1 Charisma. , Stack the Deck Stack the Deck Gain +1 Luck.
+Simple Elemental Spell
+Abilities that apply an element with 1 damage at infinite range.
+Sunburn Sunburn Inflicts Burn 1 and Blind 1 at infinite range. , Spit Spit Spit attack with infinite range that deals 1 damage. , Cold Shoulder Cold Shoulder Deal 1 ice damage and inflict Slow 1 at infinite range. , Zap Zap Deal 1 electric damage at infinite range. , Blow Kiss Blow Kiss Heal another unit by 1 HP at infinite range.
+Spending Money
+Spells which cost Coin
+Gym Membership Gym Membership Spend 5 coins, gain All Stats Up.
+(Castable once per turn.) , Vet Visit Vet Visit Spend 5 coins, heal 10 HP.
+(Castable once per turn.) , Buy Catnip Buy Catnip Spend 5 coins, gain 10 mana.
+(Castable once per turn.) , Subway Ride Subway Ride Spend 5 coins, teleport to any tile.
+(Castable once per turn.) , Make a Wish Make a Wish Spend a coin to spawn a random pickup on a random tile.
+(Castable once per turn.) , Hire Hitman Hire Hitman Spend 7 coins, summon a bounty hunter.
+(Castable once per turn.)
+Alternative Scaling
+Abilities that scale with a different stat than usual
+Shrug It Off Shrug It Off Heal yourself HP equal to half your Strength, rounded up. , Dexterous Hit Dexterous Hit A melee attack that deals damage equal to half your Dexterity, rounded up. , Barf Ball Barf Ball A ranged attack that deals damage equal to half your Constitution, rounded up.
+Burgeoning
+Abilities that become more powerful over time, but can only be used once per battle.
+Burgeoning Blast Burgeoning Blast A spell that deals 0 damage. Increase this spell's damage by 2 at the end of each turn.
+(Castable once per battle.) , Burgeoning Battery Burgeoning Battery Gain 0 mana. Increase this spell's mana gain by 2 at the end of each turn.
+(Castable once per battle.) , Burgeoning Barrier Burgeoning Barrier Gain 0 . Increase this spell's by 2 at the end of each turn.
+(Castable once per battle.)
+Paths and Soul
+Path Spells that transform into a spell of another class, after meeting a certain condition. All unlocked by the respective class by beating the Core
+Soul Passives that grant the stat changes of a class, and allow that classes abilities as level up options. All unlocked by the respective class by beating the Moon
+Tips[edit | edit source]
+Collarless cats find it much easier to fill their spell slots with Collarless active abilities, which allow them to get the full benefit from Mind Stone Mind Stone (Trinket) Your collarless spells cost -2 mana. and Steven Stone Steven Stone (Trinket) +2 Charisma
+Your collarless spells cost -2 mana. . Similarly, other classes don't get the mana reduction from Skill Stone Skill Stone (Trinket) Spells that match your class cost -1 mana. on their Collarless abilities, but Collarless cats do.
+Many Collarless passive abilities are useful on their own, but can be combined with Skill Share Skill Share Your other passive ability is shared with the other cats in your party at the start of each battle. to share with all other adventuring cats, effectively giving each party member a third passive ability slot. The upgraded version of Skill Share Skill Share Your other passive ability is shared with the other cats in your party at the start of each battle. is useful for breeding: it guarantees the other passive is inherited by all of the cat's children.
+Collarless cats can access the abilities of other classes in a few ways:
+The "[Class]'s Soul" passive abilities (e.g. Mage's Soul Mage's Soul +2 Intelligence,+2 Charisma,-1 Constitution,-1 Strength
+Mage abilities are offered when you level up. )
+The "Path of the [Class]" active abilities (e.g. Path of the Fighter Path of the Fighter Your Intelligence becomes 0 until the end of the battle, then this spell becomes a random Fighter spell permanently. )
+Items such as Crown of Chaos Crown of Chaos (Head) +2 level up Rerolls. Abilities from all classes are offered when you level up. , Chaos Controller Chaos Controller (Head) Abilities from all classes are offered when you level up. You can reroll your levelup options thrice. or Chaos Device Chaos Device (Head) Side Quest Item. When any cat levels up they are offered abilities from all classes. which offer abilities from any class on levelup.
+Certain birth defects that offer abilities from the four basic classes (e.g. Forked Tail Birth DefectForked Tail Birth Defect (tail.704) Hunter abilities are also offered when you level up.Debuffs: -2 Luck).
+Stray Cat Events[edit | edit source]
+Events mid-adventure can add new cats to the team. They are always Collarless.
+Cats from events will always be level 0, meaning they lack their first passive ability and their second active ability. Their first level up will randomly grant a passive and allow the choice of an active ability from a standard array of four. Because they also get a level-up stat bonus at Level 1, something standard cats do not get, event cats are marginally more powerful.
+Cats from events do not qualify for completion marks, nor for their corresponding unlocks. Accordingly, they do not prevent solo-cat achievements. They do return to the House like a standard cat at the end of an adventure, however.
+If the party has four cats, a fifth "bonus" cat cannot increase their level and cannot be equipped with items until a slot in the 4 cat party opens up. Non-party bonus cats will not be retired upon return to the house and will be eligible to go on another run.
+The "A cat!" event "A cat!" event A new cat starts following the party! event will act as a bonus life, and can only occur after a cat of the party has permanently died. It has a 50% chance to occur on any Event Node after this happens, and can only occur once per adventure. It will also grant a Neverstone Neverstone (Trinket) Never level up. .
+Other events that grant additional cats can occur any time and multiple times in a run:
+"The cat makes a new friend!" blessing.
+"Dead Cat" event "Dead Cat" event The cat finds a deceased cat, its body sprawled out in contortions from the pain it experienced in its final moments of life...
+"Cats in Heat" event "Cats in Heat" event The cat stumbles upon a cat party! What should the cat do?
+Abilities[edit | edit source]
+Other classes can have Collarless Abilities offered to them when leveling up. Roughly one-in-four options provided will be Collarless (lower Luck means more Collarless abilities)[citation needed].
+Basic Attacks[edit | edit source]
+Name
+Status Dealt
+Description
+Melee Attack Attack an adjacent unit.
+Short Shot 5 Shoot a unit in your line of sight.
+Short Lobbed Shot 5 Lob a shot over units and obstacles.
+Melee Attack effectively has a weight of 2, making it 50/50 chance of melee or ranged basic attack.
+Active Abilities[edit | edit source]
+Collarless Active Abilities
+Name
+Description
+Mana Cost
+Upgraded Description
+Barf Ball A ranged attack that deals damage equal to half your Constitution, rounded up. 6 A ranged attack that deals damage equal to half your Constitution, rounded up.
+(This spell costs less.)
+BBQ Spawn a cooked meat pickup. 5 Spawn a big cooked meat pickup.
+Block Gain +2 . 5 Gain +5 .
+Blow Blow units in a cone back 1 tile. 4 Blow units in a larger cone back 1 tile.
+Blow Kiss Heal another unit by 1 HP at infinite range. 4 Heal another unit by 2 HP at infinite range.
+Boost Gain +1 Magic Damage until end of turn. 3 Gain +1 Magic Damage until end of turn.
+(This spell costs less.)
+Borrow Mana Steal up to 5 mana from an ally.
+(Castable once per turn.) 0 Steal all of an ally's mana.
+(Castable once per turn.)
+Brace Gain +1 temporary Brace until your next turn. 3 Gain +1 temporary Brace and +1 temporary Thorns until your next turn.
+Brainstorm Reduce the costs of your other spells by 1 mana. 7 Reduce the cost of ALL of your spells by 1 mana.
+Burgeoning Barrier Gain 0 . Increase this spell's by 2 at the end of each turn.
+(Castable once per battle.) 0 Gain 0 . Increase this spell's by 3 at the end of each turn.
+(Castable once per battle.)
+Burgeoning Battery Gain 0 mana. Increase this spell's mana gain by 2 at the end of each turn.
+(Castable once per battle.) 0 Gain 0 mana. Increase this spell's mana gain by 3 at the end of each turn.
+(Castable once per battle.)
+Burgeoning Blast A spell that deals 0 damage. Increase this spell's damage by 2 at the end of each turn.
+(Castable once per battle.) 0 A spell that deals 0 damage. Increase this spell's damage by 3 at the end of each turn.
+(Castable once per battle.)
+Burst Fire a magical blast.
+(Castable once per battle.) 7 Fire a magical blast.
+(This spell costs 0 mana. Castable once per battle.)
+Butt Scoot Move 1 tile, leaving a maggot familiar behind you. 4 Move up to 3 tiles, leaving a maggot familiar behind you.
+Buy Catnip Spend 5 coins, gain 10 mana.
+(Castable once per turn.) 0 Spend 5 coins, gain 15 mana.
+(Castable once per turn.)
+Cat Nap Remove all of your debuffs, then fall asleep. 2 Remove all of your debuffs, gain All Stats Up, then fall asleep.
+Claws Out Gain +1 Thorns. 4 Gain +1 Thorns.
+(This spell costs less.)
+Cold Shoulder Deal 1 ice damage and inflict Slow 1 at infinite range. 6 Deal 1 ice damage and inflict Slow 1 at infinite range.
+(This spell costs less.)
+Confusion Inflict Confusion 2 on a unit. 5 Inflict Confusion 4 on units in an area.
+Copycat This spell is a copy of the most recent spell an allied cat cast. 5 This spell is an upgraded copy of the most recent spell an allied cat cast.
+CPR Revive an adjacent body to 1 HP. 6 Revive an adjacent body to 5 HP.
+(This spell costs less.)
+Dart Throw a nail that ignores shield. 5 Throw a stronger nail that ignores shield.
+(This spell costs less.)
+Desecrate Destroy a body. 0 Destroy a body and gain 2 mana.
+Dexterous Hit A melee attack that deals damage equal to half your Dexterity, rounded up. 6 A melee attack that deals damage equal to half your Dexterity, rounded up.
+(This spell costs less.)
+Doll Up Gain +1 Charisma. 2 Gain +1 Charisma.
+Bonus Passive: You have a chance to inflict Charm on units that contact or attack you. This chance increases with your Charisma.
+Dump Spawn a poop on an adjacent tile. 3 Spawn a poop on an adjacent tile. Inflict Poison 3 and a 15% chance to Stun if you poop on a unit.
+Feather Feet Gain +1 Speed. 4 Gain +1 Speed.
+Bonus Passive: You're unaffected by tile effects.
+Find a Rock Dig up a small rock. 4 Dig up a small rock.
+(This spell costs less.)
+Flex Gain +1 temporary Brace until your next turn and deal 1 knockback to each adjacent unit. 5 Gain +1 temporary Brace until your next turn and deal 3 knockback to each adjacent unit.
+(This spell costs less.)
+Focus Gain +1 Dexterity. 4 Gain +1 Dexterity.
+Bonus Passive: +25% critical hit chance.
+Forbidden Fart Damage, Inflict Poison 4 and Knock Up nearby units.
+There will be permanent consequences for casting this spell…
+(Castable once per turn.) 0 Damage, Inflict Poison 6 and Knock Up nearby units in a larger area.
+There will be permanent consequences for casting this spell…
+(Castable once per turn.)
+Gamble Gain +2% critical hit chance. If your next attack is critical, deal +100% more damage and spawn coins. 2 Gain +2% critical hit chance. If your next attack is critical, deal +200% more damage and spawn more coins.
+Gym Membership Spend 5 coins, gain All Stats Up.
+(Castable once per turn.) 0 Spend 5 coins, gain All Stats Up and refresh your basic attack and movement actions.
+(Castable once per turn.)
+Healing Bolt A lightning bolt that heals and has a chance to Stun. 7 A lightning bolt that heals allies and has a chance to Stun enemies.
+Hire Hitman Spend 7 coins, summon a bounty hunter.
+(Castable once per turn.) 0 Spend 7 coins, summon a bounty hunter with All Stats Up 2.
+(Castable once per turn.)
+Hiss Adjacent units move away from you. You have a 25% chance to inflict Fear on them. 6 Adjacent units move away from you. Inflict fear on them.
+Hop Hop up to 2 tiles away. 3 Hop up to 4 tiles away.
+Hose Off Spray a unit with water, cleansing its debuffs and making a puddle.
+(Castable once per battle.) 5 Spray a unit with water, cleansing its debuffs and making a puddle.
+(This spell costs 0 mana. Castable once per battle.)
+Hunt A ranged attack that turns anything it kills into meat. 6 A stronger ranged attack that turns anything it kills into meat.
+Interchange Exchange your movement action for an additional basic attack, and vice versa. 3 Exchange your movement action for an additional basic attack, and vice versa.
+(This spell costs 0 mana the first time you cast it each turn.)
+Invert Swap your highest and lowest stats.
+(Ties are chosen at random) 2 Swap a unit's highest and lowest stats.
+(Ties are chosen at random)
+Itch Deal 1 damage to yourself. 50% chance to spawn a friendly flea. 3 Deal 1 damage to yourself. Spawn a friendly flea.
+Knead Knead another unit. Allies gain +1 Damage, enemies gain Weakness 1. 5 Knead another unit. Allies gain +2 Damage, enemies gain Weakness 2.
+Landscape Turn an adjacent tile into a small grass tile. 1 Turn any tile into a small grass tile.
+Lick Heal an adjacent unit by 2 HP. 4 Heal an adjacent unit by 2 HP. Healed enemies gain Confusion 3.
+Look at me! Each unit turns to face you. 2 Each unit turns to face you. 20% chance to Confuse enemies.
+Magnet Pull a pickup one tile toward you.
+(Castable once per turn.) 0 Pull a pickup all the way toward you.
+(Castable once per turn)
+Make a Wish Spend a coin to spawn a random pickup on a random tile.
+(Castable once per turn.) 0 Spend a coin to spawn a random pickup on an empty tile of your choice.
+(Castable once per turn.)
+Meow Your closest ally moves toward you. 2 A target ally moves toward you.
+Metabolize Gain +1 Constitution. 3 Gain +1 Constitution.
+Bonus Passive: +3 Health Regeneration.
+Metronome Cast a random spell. 5 Cast a random upgraded spell.
+Minihook Pull a unit towards you. 3 Pull a unit towards you. Deal 1 damage and inflict 1 Bleed on them.
+Nerf Inflict -1 Damage on a unit. 4 Inflict -1 Damage and -1 Constitution on a unit.
+Number One Spawn "water" tiles in an area around yourself. 2 Spawn "water" tiles in a larger area around yourself.
+Over There! Adjacent units turn away from you. 2 Units within three tiles of you turn away from you.
+Path of the Butcher Collect an adjacent food pickup, then this spell becomes a random Butcher spell permanently. 1 Transform this spell into a random upgraded Butcher spell permanently.
+Path of the Cleric Give an enemy All Stats Up and fully heal it, then this spell becomes a random Cleric spell permanently. 0 Transform this spell into a random upgraded Cleric spell permanently.
+Path of the Druid Plant flowers on the tile you're standing on, then this spell becomes a random Druid spell permanently. Castable only if you're standing on a grass tile. 2 Transform this spell into a random upgraded Druid spell permanently.
+Path of the Fighter Your Intelligence becomes 0 until the end of the battle, then this spell becomes a random Fighter spell permanently. 0 Transform this spell into a random upgraded Fighter spell permanently.
+Path of the Hunter A lobbed attack that deals 1 damage. If this kills an enemy, this spell becomes a random Hunter spell permanently. 5 Transform this spell into a random upgraded Hunter spell permanently.
+Path of the Jester Gain 10 random stat ups and 5 random stat downs, then transform this spell into a random class spell permanently. 0 Gain 10 random stat ups, then transform this spell into a random upgraded class spell permanently.
+Path of the Mage Transform this spell into a random Mage spell permanently. 12 Transform this spell into a random upgraded Mage spell permanently.
+Path of the Monk Gain All Stats Down, then this spell becomes a random Monk spell permanently. 0 This spell becomes a random upgraded Monk spell permanently.
+Path of the Necromancer Destroy a corpse, then this spell becomes a random Necromancer spell permanently. 0 Transform this spell into a random Necromancer spell permanently.
+Path of the Psychic This spell becomes a random Psychic spell permanently. Castable only if you have full mana. 0 Transform this spell into a random upgraded Psychic spell permanently.
+Path of the Tank Transform this spell into a random Tank spell permanently. Castable only if you have 5 or less health. 0 Transform this spell into a random upgraded Tank spell permanently.
+Path of the Thief A straight shot attack that deals 1 damage. If this makes a critical hit, this spell becomes a random Thief spell permanently. 4 Transform this spell into a random upgraded Thief spell permanently.
+Path of the Tinkerer Destroy your weapon, then this spell becomes a random Tinkerer spell permanently. 0 Transform this spell into a random upgraded Tinkerer spell permanently.
+Path Of The Void Conjure a random Collarless spell into your bonus spell slot. 1 Conjure a random upgraded Collarless spell into your bonus spell slot.
+Play Dead Down yourself. You don't get injured. 0 Down yourself. You don't get injured. Revive at the end of the next round at full HP.
+Ponder Gain +1 Intelligence. 4 Gain +1 Intelligence and conjure a random bonus ability.
+Proliferate Double a unit's Poison, Bleed, and Burn.
+(Castable once per battle.) 8 Double a unit's Poison, Bleed, and Burn.
+(This spell costs 0 mana. Castable once per battle.)
+Purr Remove 1 stack of a random debuff from yourself and all adjacent units. 4 Remove 1 stack of a random debuff from and heal 1 HP to yourself and all adjacent units.
+Randomize Spawn a random tile anywhere. 2 Tiles in an area become random tiles.
+Rat Roulette Deal 1 damage to a random unit. If you kill that unit, take an extra turn. 6 Deal 2 damage to a random unit. If you kill that unit, take an extra turn.
+(This spell costs less.)
+Reach Your next basic attack has +1 range. 4 Your next basic attack has +3 range.
+Reduce Gain +20% dodge chance, +4 Speed, and -2 Damage.
+(Castable once per battle.) 5 Gain +20% dodge chance, +4 Speed, and -2 Damage.
+(This spell costs 0 mana. Castable once per battle.)
+Reflect Reflect the next projectile that hits you back at the attacker. 6 You or another unit reflects the next projectile that hits them back at the attacker.
+Rest Heal some HP, then fall asleep. 2 Heal a lot of HP, then fall asleep.
+Roll Roll up to three tiles in a straight line. 4 Roll up to ten tiles in a straight line.
+Rouse Give an adjacent unit +2 Charge.
+(Castable once per turn.) 0 Give any unit +2 Charge.
+(Castable once per turn.)
+Russian Shorthair Roulette There is a 1 in 6 chance this will kill you. If it doesn't, gain +1 to a random stat and 1-2 coins. 2 There is a 1 in 6 chance this will kill you. If it doesn't, gain +2 to a random stat and 2-4 coins.
+Second Wind Refresh your basic attack, movement, weapon, and trinket action.
+(Castable once per battle.) 8 Refresh your basic attack, movement, weapon, and trinket action.
+(This spell costs 0 mana. Castable once per battle.)
+Sharpen Claws Gain +1 Strength. 4 Gain +1 Strength.
+Bonus Passive: Your basic attack inflicts Bleed.
+Shift Swap positions with an adjacent unit.
+(Castable once per turn.) 0 Swap positions with any unit.
+(Castable once per turn.)
+Shrug It Off Heal yourself HP equal to half your Strength, rounded up. 6 Heal yourself HP equal to half your Strength, rounded up.
+(This spell costs less.)
+Slip Through Roll up to two tiles in a diagonal line. 4 Roll any number of tiles in a diagonal line.
+Smack A weak melee attack. 5 A weak melee attack with a chance to repeat.
+Snacks Heal yourself or another unit within four tiles 1 HP. 3 Heal yourself or another unit 1 HP. 50% chance to also give +1 Constitution.
+Soothing Glow Heal yourself 1. 2 Heal yourself 1 and gain +1 to a random stat.
+Soul Reap Deal 1 damage to a unit within five tiles. If this kills it, gain 5 mana. 3 Deal 1 damage to any unit. If this kills it, gain 5 mana.
+Spit Spit attack with infinite range that deals 1 damage. 4 Spit attack with infinite range that deals 2 damage in an area.
+Stack the Deck Gain +1 Luck. 4 Gain +1 Luck. You have +99 Luck during your next action.
+Steam Roller Trample over 1 tile. 4 Trample over 3 tiles.
+Step Move one tile.
+(Castable once per turn.) 0 Move two tiles.
+(Castable once per turn.)
+Stun Chuck a rock at a unit, inflicting Stun on that unit.
+(Castable once per battle.) 5 Chuck a rock at a unit, inflicting Stun on that unit.
+(This spell costs 0 mana. Castable once per battle.)
+Subway Ride Spend 5 coins, teleport to any tile.
+(Castable once per turn.) 0 Spend 2 coins, teleport to any tile.
+(Castable once per turn.)
+Sudden Affliction Trigger the Poison, Bleed, and Burn effects on a unit. 6 Trigger the Poison, Bleed, and Burn effects on a unit. If that unit isn't Poisoned, Bleeding, or Burning, they gain 1 of each.
+Sunburn Inflicts Burn 1 and Blind 1 at infinite range. 6 Inflict Burn 1 and Blind 1 in an area at infinite range.
+Super Crate Box Spawn a crate on an adjacent tile. 4 Spawn a crate within range 5.
+Swat Knockback a unit 3 tiles. 3 Knockback a unit 10 tiles.
+(This spell costs less.)
+Toast Inflict Burn 1 on an adjacent unit. 3 Inflict Burn 1 on a unit in range 5.
+Trip Immobilize an adjacent unit.
+This only has a 25% chance to work on boss units and large enemies. 4 Immobilize a unit in range 4.
+This only has a 25% chance to work on boss units and large enemies.
+Tunnel Dig to any open tile.
+(Castable once per battle.) 3 Dig to any open tile.
+(Castable once per battle. This spell costs 0 mana.)
+Vet Visit Spend 5 coins, heal 10 HP.
+(Castable once per turn.) 0 Spend 5 coins, heal 15 HP.
+(Castable once per turn.)
+Waste Time Do nothing. 1 Gain 1 Charge.
+Wet Hairball Shoot a wet hairball that deals damage in an area. 7 Shoot a wet hairball that deals more damage in an area.
+Zap Deal 1 electric damage at infinite range. 4 Deal 1 electric damage with a 25% chance to Stun at infinite range.
+Passive Abilities[edit | edit source]
+Collarless Passive Abilities
+Name
+Description
+Mana Cost
+Upgraded Description
+180 When you use your basic attack, turn around and use it again. When you use your basic attack, turn around and use it again.
+Your basic attack inflicts Confusion 1.
+Amped Gain +1 Speed at the end of your turn. Gain +1 Speed at the end of your turn.
+You can move an extra time each turn.
+Amplify +1 Magic Damage. +1 Magic Damage for every 3 Charisma you have.
+Animal Handler You start each battle with a random vermin familiar with boosted damage and health. You start each battle with 3 random vermin familiars with boosted damage and health.
+Bare Minimum Your stats can't go below 5. Your stats can't go below 7.
+Butcher's Soul +3 Constitution,+2 Strength,-2 Speed
+Butcher abilities are offered when you level up. +6 Constitution,+4 Strength,-4 Speed
+Butcher abilities are offered when you level up.
+Careful Damage you deal to other allies is reduced to 0. Damage you deal to other allies is reduced to 0. You cannot inflict debuffs on other allies.
+You are careful in many other ways too.
+Charming +1 Charisma
+You have a 25% chance to inflict Charmed on units that damage you. +2 Charisma
+You have a 40% chance to inflict Charmed on units that damage you.
+Cleric's Soul +2 Constitution, +2 Charisma, -1 Dexterity, -1 Speed
+Cleric abilities are offered when you level up. +4 Constitution, +4 Charisma, -2 Dexterity, -2 Speed
+Cleric abilities are offered when you level up.
+Daunt Small enemies won't attack you. Small enemies won't attack you.
+Inflict Fear 1 on units that contact or attack you.
+Dealer You can use consumables on other units. You can use consumables on other units.
+Consumables you use have double the effect.
+Death Boon When you're downed, all allies gain All Stats Up. When you're downed, all allies gain All Stats Up 2.
+Death's Door While you're at 1 HP, your spells cost 1 mana, but can only be cast once per turn. While you're at 5 or fewer HP, your spells cost 1 mana, but can only be cast once per turn.
+Deathproof While downed, you have a 25% chance to revive with 1 HP at the end of each round. While downed, you have a 33% chance to revive with 10 HP and All Stats Up at the end of each round.
+Dirty Claws Your physical attacks on Poisoned or Bleeding enemies inflict +1 Poison and/or Bleed. Your basic attack inflicts Poison 1 and Bleed 1.
+Your physical attacks on Poisoned or Bleeding enemies inflict +1 Poison and/or Bleed.
+Druid's Soul +3 Charisma,+1 Luck,-2 Constitution
+Druid abilities are offered when you level up. +6 Charisma,+2 Luck,-4 Constitution
+Druid abilities are offered when you level up.
+E-Tank Start each battle with +20 unfilled max health. Start each battle with +50 unfilled max health.
+Fast Footsies +1 Speed
+You are immune to negative tile effects. +3 Speed
+You are immune to negative tile effects.
+You can move through units and objects.
+Fighter's Soul +2 Strength,+1 Speed,-1 Intelligence
+Fighter abilities are offered when you level up. +4 Strength,+2 Speed,-2 Intelligence
+Fighter abilities are offered when you level up.
+First Impression Start each battle with +1 Bonus Attack. Start each battle with +2 Bonus Attacks and +2 Bonus Moves.
+Furious Gain +1 Damage each time you land a critical hit.
++5% critical hit chance. Gain +1 Damage and +5% critical hit chance each time you land a critical hit.
++5% critical hit chance.
+Gassy Whenever you take damage, knock back all adjacent units. Whenever you take damage, Poison all adjacent units and knock them back 10 tiles.
+Hot-Blooded Burn you inflict is increased by 1. Burn you inflict is increased by 2.
+Hunter's Soul +3 Dexterity,+2 Luck ,-1 Constitution,-2 Speed
+Hunter abilities are offered when you level up. +6 Dexterity,+4 Luck,-2 Constitution,-4 Speed
+Hunter abilities are offered when you level up.
+Infested 50% chance to spawn a flea familiar when you end your turn. Spawn 2-3 fleas at the start of each battle.
+50% chance to spawn a flea familiar when you end your turn.
+Jester's Soul Abilities from any class are offered when you level up.
+You can reroll your level up options twice. +2 Strength,+2 Dexterity,+2 Constitution,+2 Intelligence,+2 Charisma,+2 Speed,+2 Luck
+Abilities from any class are offered when you level up.
+You can reroll your level up options twice.
+Late Bloomer On your 5th turn, you gain All Stats Up 3. On your 3rd turn, you gain All Stats Up 3.
+Leader Adjacent allies have +1 Damage and +1 Range. All allies have +1 Damage and +1 Range.
+Longshot +1 Range. +2 Range.
+Your ranged attacks have +25% critical hit chance.
+Luck Drain Gain +1 Luck whenever a unit is downed. Gain +1 Luck whenever a unit is downed.
+Gain an extra +2 Luck whenever YOU down a unit.
+Lucky +4 Luck +7 Luck
+Mage's Soul +2 Intelligence,+2 Charisma,-1 Constitution,-1 Strength
+Mage abilities are offered when you level up. +4 Intelligence,+4 Charisma,-2 Constitution,-2 Strength
+Mage abilities are offered when you level up.
+Mange Inflict Poison 1 on units that contact you. Inflict 1 Poison, Bleed, Bruise, Weakness, and Leech on units that contact you.
+Mania 10% chance to restore all your mana at the start of your turn. 25% chance to restore all your mana at the start of your turn.
+Metal Detector 5% chance to spawn a coin when you move over a tile. 10% chance to spawn a coin when you move over a tile.
+Might of the Meek Damage you deal that's 2 or less is always critical. Damage you deal that's 3 or less is always critical. +50% Crit Damage.
+Mini-Me Gain a half-sized copy of yourself that has 50% of your stats. The copy is AI controlled. Gain a half-sized copy of yourself that has 50% of your stats and quarter-sized copy that has 25% of your stats. The copies are AI controlled.
+Monk's Soul +2 Intelligence,+2 Charisma,-1 Strength,-1 Dexterity
+Monk abilities are offered when you level up. +4 Intelligence,+4 Charisma,-2 Strength,-2 Dexterity
+Monk abilities are offered when you level up.
+Natural Healing You have +1 Health Regeneration You have +2 Health Regeneration
+Adjacent allies gain +1 Health Regeneration
+Necromancer's Soul +2 Constitution, +1 Charisma, -2 Strength
+Necromancer abilities are offered when you level up. +4 Constitution, +2 Charisma, -4 Strength
+Necromancer abilities are offered when you level up.
+Overconfident While at full HP, reduce the cost of your spells by 2, but take double damage. This can't reduce mana costs to less than 1. While at full HP, reduce the cost of your spells by 2, but take double damage. This can't reduce mana costs to less than 1. When you cast a spell, heal 1 HP.
+Patience If you end your turn without taking any actions, gain an extra turn at the end of the round. You don't regenerate mana on your main turn if you pass it. If you end your turn without taking any actions, gain an extra turn at the end of the round.
+Protection +1 +3
+Psychic's Soul +1 Intelligence,+1 Charisma,+1 Speed,-1 Constitution
+Psychic abilities are offered when you level up. +2 Intelligence,+2 Charisma,+2 Speed,-2 Constitution
+Psychic abilities are offered when you level up.
+Pulp When you kill a unit or destroy a corpse, it becomes meat. +4 Damage.
+When you kill a unit or destroy a corpse, it becomes meat.
+Rockin' Spawn 4 small rocks at the start of each battle. Spawn 4 small rocks and 4 boulders at the start of each battle.
+Santa Sangre When you're downed, allies heal 12 HP. Excess healing is converted to Shield. When you're downed, allies heal 20 HP. Excess healing is converted to Shield.
+Scavenger If your trinket slot is empty, equip a small consumable food item at the start of each battle. If your trinket slot is empty, equip a big consumable food item at the start of each battle.
+Self-Assured Gain a random stat up whenever you down a unit. Gain All Stats Up whenever you down a unit.
+Serial Killer After you kill 3 units, gain +6 Speed and backstabs have 100% crit chance. After you kill 3 units, gain +6 Speed, backstabs have 100% crit chance, and gain an extra basic attack each turn.
+Skill Share Your other passive ability is shared with the other cats in your party at the start of each battle. Your other passive ability is shared with the other cats in your party at the start of each battle. When breeding, your children will always inherit your other passive.
+Slugger +1 Damage. +3 Damage.
+Strength in Numbers Your familiars have +1 Damage for each other familiar you have. You and your familiars have +1 Damage for each other familiar you have.
+Study Gain +1 Intelligence whenever you hit a new type of unit with an attack or ability. Gain +1 Intelligence whenever you hit a new type of unit with an attack or ability. All enemies of that type become Marked.
+Tank's Soul +4 Constitution,-1 Dexterity,-1 Intelligence
+Tank abilities are offered when you level up. +8 Constitution -2 Dexterity,-2 Intelligence
+Tank abilities are offered when you level up.
+Thief's Soul +4 Speed,+1 Luck,-1 Strength,-1 Constitution
+Thief abilities are offered when you level up. +8 Speed,+2 Luck,-2 Strength,-2 Constitution
+Thief abilities are offered when you level up.
+Tinkerer's Soul +4 Intelligence,-1 Charisma,-1 Luck
+Tinkerer abilities are offered when you level up. +8 Intelligence,-2 Charisma,-2 Luck
+Tinkerer abilities are offered when you level up.
+Unrestricted Actions with a once per battle restriction can be cast once per turn instead. Actions with a once per battle restriction can be cast once per turn instead.
+Actions with a once per turn restriction have a 50% chance to be castable again.
+Unscarred While at full hp you have 100% critical hit chance. While at full hp you have 100% critical hit chance, +5 Mana Regeneration and +1 All Stats Up.
+Void Soul Only upgraded Collarless abilities are offered when you level up Only upgraded Collarless abilities are offered when you level up. Collarless spells cost 1 less mana.
+Whipcracker When you damage an ally they gain +1 Damage. When you damage an ally they gain +1 Damage and +1 Speed.
+Wiggly +25% dodge chance. +25% dodge chance and +25% critical hit chance.
+Worms 50% chance to spawn a maggot familiar when you end your turn. 50% chance to spawn a mutated maggot familiar when you end your turn
+Zenkai Boost If you end battle with 1 HP, gain +1 to a random stat permanently and start the next battle at full HP with All Stats Up 3. If you end battle with 1 HP, gain +1 to 3 random stats permanently and start the next battle at full HP with All Stats Up 3.
+Supplementary Abilities[edit | edit source]
+Collarless Supplementary Abilities
+Name
+Description
+Mana Cost
+Upgraded Description
+Barrage Fire the machine guns! 5
+Break Circuit Break out of short circuit 6
+Stop Hitting Yourself Command all the moon hands to attack the face. 10
+Counterspell Counter the next spell an enemy casts.
+If counterspell isn't triggered by your next turn, absorb it to gain +2 Damage and +2 All Stats Up. 0
+Eject! Launch yourself out of the mech. Deal damage to units you land on and yourself. 3
+Enter Mech Get in the mech suit.
+Groom Remove all of the debuffs on yourself or an adjacent unit. 5 Remove all of the debuffs and heal a little HP to yourself or an adjacent unit.
+Spook Deal damage to any unit. This has a 25% chance to inflict Fear.
+Castable while downed. 0
+Throw Weapon (Bonus) Throw your weapon at a unit. The weapon breaks.
+(Castable once per turn.) 0
+Thrusters Dash forward and light fires in your path. 5
+Trigger the Nuke Explode the nuke and mass damage everything. 0
+Unlocks[edit | edit source]
+Collarless cats encountered mid-adventure do not award unlocks. Only cats present at the start of an adventure count for Collarless unlocks.
+Unlike other classes, Collarless has an additional set of unlocks for completing adventures with a team of only Collarless cats. For these, the player must depart with at least one Collarless cat, and no cats of any other class. A single Collarless cat will count.
+Reward
+Condition
+Metronome Metronome Cast a random spell.
+Complete Caves with a Collarless cat.
+Skill Share Skill Share Your other passive ability is shared with the other cats in your party at the start of each battle.
+Complete Boneyard with a Collarless cat.
+Path Of The Void Path Of The Void Conjure a random Collarless spell into your bonus spell slot.
+Complete Core with a Collarless cat.
+Void Soul Void Soul Only upgraded Collarless abilities are offered when you level up
+Complete Moon with a Collarless cat.
+Lil' Kitty Lil' Kitty (Weapon) Use: Spawn a Flea familiar.
+Complete Jurassic with a Collarless cat.
+Ball of Yarn Ball of Yarn (Trinket) Spawn a Charmed Kitten with All Stats Up 2 at the start of each battle.
+Complete End with a Collarless cat.
+Normal Ears Normal Ears (Head) +1 Strength, +1 Dexterity, +1 Constitution, +1 Intelligence, +1 Speed, +1 Charisma, +1 Luck
+Defeat  The KingThrobbing King Follow his orders! OR ELSE! with a Collarless cat.
+Ordinary Whiskers Ordinary Whiskers (Face) +1 Strength, +1 Dexterity, +1 Constitution, +1 Intelligence, +1 Speed, +1 Charisma, +1 Luck
+Defeat  Chaos!Chaos! Embrace chaos ! soahc ecarbmE with a Collarless cat.
+Mundane Collar Mundane Collar (Neck) +1, +1, +1, +1, +1, +1, +1
+Defeat  The CreatorThe Creator Nosce te Ipsum!
+with a Collarless cat.
+Skill Split Skill Split (Trinket) Gain a temporary copy of your first passive ability at the start of each battle.
+Complete all areas with a Collarless cat.
+Copycat Hat Copycat Hat (Head) Copies your trinket's passive effects.
+Defeat  The KingThrobbing King Follow his orders! OR ELSE! with only Collarless cats.
+Copycat Mask Copycat Mask (Face) Copies your trinket's passive effects.
+Defeat  Chaos!Chaos! Embrace chaos ! soahc ecarbmE with only Collarless cats.
+Copycat Scarf Copycat Scarf (Neck) Copies your trinket's passive effects.
+Defeat  The CreatorThe Creator Nosce te Ipsum!
+with only Collarless cats.
+Gallery[edit | edit source]
+Assets
+Idle
+Turn start
+Victory
+Quotes[edit | edit source]
+See Cats/Quotes.
+Trivia[edit | edit source]
+Collarless is a portmanteau of "collar" and "colorless," the latter being a reference to colorless mana in Magic: The Gathering.
+Collarless is referred to as Colorless internally.
+For this reason,  PebblesPebbles Its melee attack knocks units backwards.
+Can throw rocks. appears to be the collarless equivalent of class-themed mini-bosses such as  FenrirFenrir Tosses bear traps!
+Has an affinity for tall grass.
+Knocks back Melee attackers. for Hunter and  MagnusMagnus Has a chain dash and spin attack that hits all adjacent units! for Fighter, as his internal nickname is Colorless Cat.
+The only Elements missing from Collarless abilities are Earth, Gravity, and Explosion, tying it with Mage for the class with the most elemental diversity.
+When starting an adventure, other classes receive from a list of 10 starter abilities. Collarless is unique in that every Collarless draftable ability is a starter ability, meaning technically there are 108 Collarless starter abilities.
+Jester is the only other class that has no starter abilities, instead having a list of starter main attacks.
+The symbol on the Collarless class collar is the letter Ø, a letter that originates from Scandinavian languages. It is also called a null sign, and is often used to represent an empty set in mathematics.
+Classes
+Collarless
+Fighter
+Hunter
+Mage
+Tank
+Cleric
+Thief
+Necromancer
+Tinkerer
+Butcher
+Druid
+Psychic
+Monk
+Jester

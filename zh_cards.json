@@ -1,0 +1,512 @@
+{
+ "Focus": {
+  "zh_name": "专注",
+  "zh_desc": "获得 +1 。",
+  "zh_cls": "增益",
+  "mp": 4
+ },
+ "Interchange": {
+  "zh_name": "互换",
+  "zh_desc": "将你的移动行动交换为 一次额外的基础攻击， 反之亦然。",
+  "zh_cls": "增益",
+  "mp": 3
+ },
+ "GainThorns": {
+  "zh_name": "亮爪",
+  "zh_desc": "获得 +1 荆棘。",
+  "zh_cls": "增益",
+  "mp": 4
+ },
+ "Desecrate": {
+  "zh_name": "亵渎",
+  "zh_desc": "摧毁一具尸体。",
+  "zh_cls": "近战",
+  "mp": 2
+ },
+ "RussianRoulette": {
+  "zh_name": "俄罗斯短毛猫轮盘",
+  "zh_desc": "有 1/6 的几率杀死你。 如果没有， 获得随机属性 +1 和 1-2 枚金币。",
+  "zh_cls": "增益",
+  "mp": 2
+ },
+ "ManaDrain": {
+  "zh_name": "借用法力",
+  "zh_desc": "从一名盟友那里 窃取最多 5 点法力。 (每回合限施放一次。)",
+  "zh_cls": "近战",
+  "mp": 4
+ },
+ "GymMembership": {
+  "zh_name": "健身房会员",
+  "zh_desc": "花费 5 金币，获得全属性提升。 (每回合限施放一次。)",
+  "zh_cls": "增益",
+  "mp": 5
+ },
+ "ColdShoulder": {
+  "zh_name": "冷遇",
+  "zh_desc": "造成 1 点冰霜伤害 并施加 1 层减速， 无限射程。",
+  "zh_cls": "魔法",
+  "mp": 6
+ },
+ "Suppress": {
+  "zh_name": "击晕",
+  "zh_desc": "向一个单位投掷石块， 对其施加晕眩。 （每场战斗限用一次。）",
+  "zh_cls": "远程",
+  "mp": 5
+ },
+ "Nerf": {
+  "zh_name": "削弱",
+  "zh_desc": "对一个单位施加 -1 伤害。",
+  "zh_cls": "魔法",
+  "mp": 4
+ },
+ "Reflect": {
+  "zh_name": "反射",
+  "zh_desc": "将下一个击中你的投射物 反射回攻击者。",
+  "zh_cls": "防御",
+  "mp": 6
+ },
+ "Contort": {
+  "zh_name": "反转",
+  "zh_desc": "交换你的最高和最低属性。 （属性相同时随机选择）",
+  "zh_cls": "增益",
+  "mp": 2
+ },
+ "Spit": {
+  "zh_name": "吐口水",
+  "zh_desc": "无限射程的吐口水攻击， 造成 1 点伤害。",
+  "zh_cls": "远程",
+  "mp": 4
+ },
+ "Blow": {
+  "zh_name": "吹气",
+  "zh_desc": "将锥形范围内的单位击退 1 格。",
+  "zh_cls": "魔法",
+  "mp": 4
+ },
+ "BarfBall": {
+  "zh_name": "呕吐球",
+  "zh_desc": "一次远程攻击， 造成的伤害等于你 的一半， 向上取整。",
+  "zh_cls": "远程",
+  "mp": 6
+ },
+ "Purr": {
+  "zh_name": "呼噜",
+  "zh_desc": "移除你自己和所有相邻单位身上的 1 层随机减益效果。",
+  "zh_cls": "增益",
+  "mp": 4
+ },
+ "Hiss": {
+  "zh_name": "哈气",
+  "zh_desc": "相邻单位远离你。 你有 25% 的几率 对它们施加恐惧效果。",
+  "zh_cls": "魔法",
+  "mp": 6
+ },
+ "Meow": {
+  "zh_name": "喵呜",
+  "zh_desc": "离你最近的盟友向你移动。",
+  "zh_cls": "增益",
+  "mp": 2
+ },
+ "SubwayRide": {
+  "zh_name": "地铁出行",
+  "zh_desc": "花费 5 金币，传送到任意地块。 (每回合限施放一次。)",
+  "zh_cls": "移动",
+  "mp": 3
+ },
+ "PathOfTheTank": {
+  "zh_name": "坦克之路",
+  "zh_desc": "将此法术永久变形为 一个随机坦克法术。 仅当你的生命值不高于 5 时可施放。",
+  "zh_cls": "增益",
+  "mp": 3
+ },
+ "Taint": {
+  "zh_name": "增殖",
+  "zh_desc": "使一个单位的中毒、 流血和燃烧层数翻倍。 （每场战斗限用一次。）",
+  "zh_cls": "近战",
+  "mp": 8
+ },
+ "Endeavor": {
+  "zh_name": "复苏之风",
+  "zh_desc": "刷新你的基础攻击、移动、 武器和饰品行动。 （每场战斗限用一次。）",
+  "zh_cls": "增益",
+  "mp": 8
+ },
+ "BrainDrainMagicMissile": {
+  "zh_name": "大脑飞弹",
+  "zh_desc": "发射一枚无限射程且必中的投射物。",
+  "zh_cls": "近战",
+  "mp": 7
+ },
+ "PathOfTheJester": {
+  "zh_name": "小丑之路",
+  "zh_desc": "获得 10 个随机属性提升和 5 个随机属性下降， 然后将此法术永久变形为 一个随机职业法术。",
+  "zh_cls": "增益",
+  "mp": 2
+ },
+ "MiniHook": {
+  "zh_name": "小钩爪",
+  "zh_desc": "将一个单位拉向你。",
+  "zh_cls": "远程",
+  "mp": 3
+ },
+ "Gassy_AssBlast": {
+  "zh_name": "屁股冲击",
+  "zh_desc": "击退所有相邻单位。",
+  "zh_cls": "近战",
+  "mp": 4
+ },
+ "ButtScoot": {
+  "zh_name": "屁股滑行",
+  "zh_desc": "移动 1 个地块， 在身后留下一个蛆虫使魔。",
+  "zh_cls": "移动",
+  "mp": 4
+ },
+ "PathOfTheButcher": {
+  "zh_name": "屠夫之路",
+  "zh_desc": "收集一个相邻的食物掉落物， 然后此法术将永久变为 一个随机屠夫法术。",
+  "zh_cls": "近战",
+  "mp": 1
+ },
+ "PathOfTheTinkerer": {
+  "zh_name": "工匠之路",
+  "zh_desc": "摧毁你的武器， 然后此法术将永久变为 一个随机工匠法术。",
+  "zh_cls": "增益",
+  "mp": 4
+ },
+ "PathOfTheDruid": {
+  "zh_name": "德鲁伊之路",
+  "zh_desc": "在你站立的地块上种植花朵， 然后此法术将永久变为 一个随机德鲁伊法术。 仅当你站在草地地块上时可施放。",
+  "zh_cls": "增益",
+  "mp": 2
+ },
+ "CPR": {
+  "zh_name": "心肺复苏",
+  "zh_desc": "复活一具相邻的尸体， 使其拥有 1 点生命值。",
+  "zh_cls": "治疗",
+  "mp": 6
+ },
+ "PathOfTheFighter": {
+  "zh_name": "战士之路",
+  "zh_desc": "你的 变为 0 直到战斗结束， 然后此法术将永久变为 一个随机战士法术。",
+  "zh_cls": "增益",
+  "mp": 2
+ },
+ "FindARock": {
+  "zh_name": "找块石头",
+  "zh_desc": "挖出一块小石头。",
+  "zh_cls": "其他",
+  "mp": 4
+ },
+ "ScuffItOff": {
+  "zh_name": "抖落伤痛",
+  "zh_desc": "治疗自己，恢复量等于你 的一半， 向上取整。",
+  "zh_cls": "增益",
+  "mp": 6
+ },
+ "SoothingGlow": {
+  "zh_name": "抚慰之光",
+  "zh_desc": "治疗你自己 1 点。",
+  "zh_cls": "增益",
+  "mp": 2
+ },
+ "Smack": {
+  "zh_name": "拍击",
+  "zh_desc": "一次虚弱的近战攻击。",
+  "zh_cls": "近战",
+  "mp": 5
+ },
+ "Swat": {
+  "zh_name": "拍打",
+  "zh_desc": "将一个单位击退 3 格。",
+  "zh_cls": "近战",
+  "mp": 3
+ },
+ "BreakWeb": {
+  "zh_name": "挣脱",
+  "zh_desc": "挣脱缠住你的东西。",
+  "zh_cls": "增益",
+  "mp": 5
+ },
+ "Dump": {
+  "zh_name": "排便",
+  "zh_desc": "在相邻地块上生成一坨便便。",
+  "zh_cls": "防御",
+  "mp": 3
+ },
+ "Infiltrate": {
+  "zh_name": "掘进",
+  "zh_desc": "挖掘至任意空地块。 （每场战斗限用一次。）",
+  "zh_cls": "移动",
+  "mp": 3
+ },
+ "Metabolize": {
+  "zh_name": "新陈代谢",
+  "zh_desc": "获得 +1 。",
+  "zh_cls": "增益",
+  "mp": 3
+ },
+ "Sunburn": {
+  "zh_name": "晒伤",
+  "zh_desc": "施加 1 层燃烧和 1 层致盲， 无限射程。",
+  "zh_cls": "魔法",
+  "mp": 6
+ },
+ "Block": {
+  "zh_name": "格挡",
+  "zh_desc": "获得 +2 。",
+  "zh_cls": "防御",
+  "mp": 5
+ },
+ "Copycat": {
+  "zh_name": "模仿",
+  "zh_desc": "此法术是友方猫咪 最近施放法术的复制。",
+  "zh_cls": "其他",
+  "mp": 5
+ },
+ "PathOfTheMonk": {
+  "zh_name": "武僧之路",
+  "zh_desc": "获得全属性下降， 然后此法术将永久变为 一个随机武僧法术。",
+  "zh_cls": "增益",
+  "mp": 4
+ },
+ "HealBolt": {
+  "zh_name": "治愈闪电",
+  "zh_desc": "一道治疗并有几率 造成晕眩的闪电。",
+  "zh_cls": "魔法",
+  "mp": 7
+ },
+ "PathOfTheMage": {
+  "zh_name": "法师之路",
+  "zh_desc": "将此法术永久变形为 一个随机法师法术。",
+  "zh_cls": "增益",
+  "mp": 12
+ },
+ "WasteTime": {
+  "zh_name": "浪费时间",
+  "zh_desc": "什么也不做。",
+  "zh_cls": "增益",
+  "mp": 1
+ },
+ "Confusion": {
+  "zh_name": "混乱",
+  "zh_desc": "对一个单位施加 2 层混乱。",
+  "zh_cls": "魔法",
+  "mp": 5
+ },
+ "BurgeoningBarrier": {
+  "zh_name": "滋长屏障",
+  "zh_desc": "获得 {v0} 。 每回合结束时， 此法术的 增加 2 点。 （每场战斗限用一次。）",
+  "zh_cls": "增益",
+  "mp": 6
+ },
+ "PathOfThePsychic": {
+  "zh_name": "灵能者之路",
+  "zh_desc": "此法术将永久变为 一个随机灵能者法术。 仅当你法力值已满时可施放。",
+  "zh_cls": "增益",
+  "mp": 3
+ },
+ "Toast": {
+  "zh_name": "烘烤",
+  "zh_desc": "对一名相邻单位施加 1 层燃烧。",
+  "zh_cls": "魔法",
+  "mp": 3
+ },
+ "BBQ": {
+  "zh_name": "烧烤",
+  "zh_desc": "生成一个熟肉掉落物。",
+  "zh_cls": "召唤",
+  "mp": 5
+ },
+ "PushMove": {
+  "zh_name": "蒸汽压路机",
+  "zh_desc": "践踏 1 个地块。",
+  "zh_cls": "移动",
+  "mp": 4
+ },
+ "Burst": {
+  "zh_name": "爆发",
+  "zh_desc": "发射一道魔法冲击。 （每场战斗限用一次。）",
+  "zh_cls": "魔法",
+  "mp": 7
+ },
+ "PathOfTheCleric": {
+  "zh_name": "牧师之路",
+  "zh_desc": "让一个敌人获得全属性提升并完全治愈它， 然后此法术将永久变为 一个随机牧师法术。",
+  "zh_cls": "近战",
+  "mp": 6
+ },
+ "PathOfTheHunter": {
+  "zh_name": "猎人之路",
+  "zh_desc": "一次抛射攻击，造成 1 点伤害。 如果杀死敌人，此法术将永久变为 一个随机猎人法术。",
+  "zh_cls": "远程",
+  "mp": 5
+ },
+ "CatNap": {
+  "zh_name": "猫咪打盹",
+  "zh_desc": "移除你的所有减益效果， 然后进入睡眠。",
+  "zh_cls": "增益",
+  "mp": 2
+ },
+ "Groom": {
+  "zh_name": "理毛",
+  "zh_desc": "移除你自己或一个相邻单位 身上的所有减益效果。",
+  "zh_cls": "治疗",
+  "mp": 5
+ },
+ "Zap": {
+  "zh_name": "电击",
+  "zh_desc": "造成 1 点电击伤害，无限射程。",
+  "zh_cls": "魔法",
+  "mp": 4
+ },
+ "Itch": {
+  "zh_name": "瘙痒",
+  "zh_desc": "对自己造成 1 点伤害。 50% 几率生成一只友方跳蚤。",
+  "zh_cls": "增益",
+  "mp": 3
+ },
+ "PathOfTheThief": {
+  "zh_name": "盗贼之路",
+  "zh_desc": "一次直线射击攻击， 造成 1 点伤害。 如果产生暴击， 此法术将永久变为 一个随机盗贼法术。",
+  "zh_cls": "远程",
+  "mp": 4
+ },
+ "VetVisit": {
+  "zh_name": "看兽医",
+  "zh_desc": "花费 5 金币，治疗 10 点生命值。 (每回合限施放一次。)",
+  "zh_cls": "增益",
+  "mp": 2
+ },
+ "MiniDistract": {
+  "zh_name": "看那边！",
+  "zh_desc": "相邻单位转过身背对你。",
+  "zh_cls": "其他",
+  "mp": 2
+ },
+ "BreakShortCircuit": {
+  "zh_name": "破坏回路",
+  "zh_desc": "摆脱短路状态",
+  "zh_cls": "增益",
+  "mp": 6
+ },
+ "SharpenClaws": {
+  "zh_name": "磨爪",
+  "zh_desc": "获得 +1 。",
+  "zh_cls": "增益",
+  "mp": 4
+ },
+ "ForbiddenFart": {
+  "zh_name": "禁忌之屁",
+  "zh_desc": "对附近单位造成伤害 并施加 4 层中毒和击飞。 施放此法术会有永久性后果…… (每回合限施放一次。)",
+  "zh_cls": "魔法",
+  "mp": 5
+ },
+ "Shift": {
+  "zh_name": "移位",
+  "zh_desc": "与一个相邻单位交换位置。 （每回合限用一次。）",
+  "zh_cls": "移动",
+  "mp": 4
+ },
+ "PokeWound": {
+  "zh_name": "突发恶疾",
+  "zh_desc": "触发一个单位身上的中毒、 流血和燃烧效果。",
+  "zh_cls": "近战",
+  "mp": 6
+ },
+ "Trip": {
+  "zh_name": "绊倒",
+  "zh_desc": "定身一个相邻单位。 该效果对 boss 单位和大 型敌人只有 25% 的成功率。",
+  "zh_cls": "减益",
+  "mp": 4
+ },
+ "Reduce": {
+  "zh_name": "缩小",
+  "zh_desc": "获得 +20% 闪避率、 +4 和 -2 伤害。 （每场战斗限用一次。）",
+  "zh_cls": "增益",
+  "mp": 5
+ },
+ "FeatherFeet": {
+  "zh_name": "羽步",
+  "zh_desc": "获得 +1 。",
+  "zh_cls": "增益",
+  "mp": 4
+ },
+ "Roll": {
+  "zh_name": "翻滚",
+  "zh_desc": "沿直线翻滚 最多 3 个地块。",
+  "zh_cls": "移动",
+  "mp": 4
+ },
+ "LotteryShottery": {
+  "zh_name": "老鼠轮盘",
+  "zh_desc": "对一个随机单位造成 1 点伤害。 如果你杀死了该单位， 获得一个额外回合。",
+  "zh_cls": "远程",
+  "mp": 6
+ },
+ "LickHeal": {
+  "zh_name": "舔舐",
+  "zh_desc": "治疗一个相邻单位 2 点生命值。",
+  "zh_cls": "治疗",
+  "mp": 4
+ },
+ "PathOfTheVoid": {
+  "zh_name": "虚空之路",
+  "zh_desc": "在你的额外法术栏位中 生成一个随机无项圈法术。",
+  "zh_cls": "增益",
+  "mp": 1
+ },
+ "PlayDead": {
+  "zh_name": "装死",
+  "zh_desc": "让自己倒地。你不会受伤。",
+  "zh_cls": "防御",
+  "mp": 2
+ },
+ "SuperCrateBox": {
+  "zh_name": "超级板条箱",
+  "zh_desc": "在相邻地块上生成一个木箱。",
+  "zh_cls": "召唤",
+  "mp": 4
+ },
+ "Knead": {
+  "zh_name": "踩奶",
+  "zh_desc": "对另一个单位踩奶。 盟友获得 +1 伤害， 敌人获得 1 层虚弱。",
+  "zh_cls": "增益",
+  "mp": 5
+ },
+ "PrepareToJump": {
+  "zh_name": "蹦跳",
+  "zh_desc": "蹦跳至最多 2 个地块外。",
+  "zh_cls": "移动",
+  "mp": 3
+ },
+ "Step": {
+  "zh_name": "迈步",
+  "zh_desc": "移动一格。 （每回合限用一次。）",
+  "zh_cls": "移动",
+  "mp": 1
+ },
+ "Till": {
+  "zh_name": "随机化",
+  "zh_desc": "在任意位置生成一个随机地块。",
+  "zh_cls": "近战",
+  "mp": 2
+ },
+ "HireHitman": {
+  "zh_name": "雇佣杀手",
+  "zh_desc": "花费 7 金币，召唤一个赏金猎人。 (每回合限施放一次。)",
+  "zh_cls": "召唤",
+  "mp": 3
+ },
+ "BlowKiss": {
+  "zh_name": "飞吻",
+  "zh_desc": "治疗另一名单位 1 点生命值， 无限射程。",
+  "zh_cls": "魔法",
+  "mp": 4
+ },
+ "Dart": {
+  "zh_name": "飞镖",
+  "zh_desc": "投掷一根无视护盾的钉子。",
+  "zh_cls": "远程",
+  "mp": 5
+ }
+}

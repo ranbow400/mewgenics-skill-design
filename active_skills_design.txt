@@ -1,0 +1,109 @@
+﻿名称	图标文件	原版法力	StS2费用	参考类型	升级前效果(英文原文)	升级后效果(英文原文)
+Barf Ball	ABILITY_Barf_Ball.svg	6		Attack	A ranged attack that deals damage equal to half your Constitution, rounded up.	A ranged attack that deals damage equal to half your Constitution, rounded up. (This spell costs less.)
+BBQ	ABILITY_BBQ.svg	5		Skill	Spawn a cooked meat pickup.	Spawn a big cooked meat pickup.
+Block	ABILITY_Block.svg	5		Skill	Gain +2 Shield.	Gain +5 Shield.
+Blow	ABILITY_Blow.svg	4		Skill	Blow units in a cone back 1 tile.	Blow units in a larger cone back 1 tile.
+Blow Kiss	ABILITY_Blow_Kiss.svg	4		Skill	Heal another unit by 1 HP at infinite range.	Heal another unit by 2 HP at infinite range.
+Boost	ABILITY_Boost.svg	3		Attack	Gain +1 Magic Damage until end of turn.	Gain +1 Magic Damage until end of turn. (This spell costs less.)
+Borrow Mana	ABILITY_Borrow_Mana.svg	0		Skill	Steal up to 5 mana from an ally. (Castable once per turn.)	Steal all of an ally's mana. (Castable once per turn.)
+Brace	ABILITY_Brace.svg	3		Skill	Gain +1 temporary Brace until your next turn.	Gain +1 temporary Brace and +1 temporary Thorns until your next turn.
+Brainstorm	ABILITY_Brainstorm.svg	7		Skill	Reduce the costs of your other spells by 1 mana.	Reduce the cost of ALL of your spells by 1 mana.
+Burgeoning Barrier	ABILITY_Burgeoning_Barrier.svg	0		Skill	Gain 0 Shield. Increase this spell's Shield by 2 at the end of each turn. (Castable once per battle.)	Gain 0 Shield. Increase this spell's Shield by 3 at the end of each turn. (Castable once per battle.)
+Burgeoning Battery	ABILITY_Burgeoning_Battery.svg	0		Skill	Gain 0 mana. Increase this spell's mana gain by 2 at the end of each turn. (Castable once per battle.)	Gain 0 mana. Increase this spell's mana gain by 3 at the end of each turn. (Castable once per battle.)
+Burgeoning Blast	ABILITY_Burgeoning_Blast.svg	0		Attack	A spell that deals 0 damage. Increase this spell's damage by 2 at the end of each turn. (Castable once per battle.)	A spell that deals 0 damage. Increase this spell's damage by 3 at the end of each turn. (Castable once per battle.)
+Burst	ABILITY_Burst.svg	7		Attack	Fire a magical blast. (Castable once per battle.)	Fire a magical blast. (This spell costs 0 mana. Castable once per battle.)
+Butt Scoot	ABILITY_Butt_Scoot.svg	4		Power	Move 1 tile, leaving a maggot familiar behind you.	Move up to 3 tiles, leaving a maggot familiar behind you.
+Buy Catnip	ABILITY_Buy_Catnip.svg	0		Skill	Spend 5 coins, gain 10 mana. (Castable once per turn.)	Spend 5 coins, gain 15 mana. (Castable once per turn.)
+Cat Nap	ABILITY_Cat_Nap.svg	2		Skill	Remove all of your debuffs, then fall asleep.	Remove all of your debuffs, gain All Stats Up, then fall asleep.
+Claws Out	ABILITY_Claws_Out.svg	4		Skill	Gain +1 Thorns.	Gain +1 Thorns. (This spell costs less.)
+Cold Shoulder	ABILITY_Cold_Shoulder.svg	6		Attack	Deal 1 ice damage and inflict Slow 1 at infinite range.	Deal 1 ice damage and inflict Slow 1 at infinite range. (This spell costs less.)
+Confusion	ABILITY_Confusion.svg	5		Skill	Inflict Confusion 2 on a unit.	Inflict Confusion 4 on units in an area.
+Copycat	ABILITY_Copycat.svg	5		Skill	This spell is a copy of the most recent spell an allied cat cast.	This spell is an upgraded copy of the most recent spell an allied cat cast.
+CPR	ABILITY_CPR.svg	6		Skill	Revive an adjacent body to 1 HP.	Revive an adjacent body to 5 HP. (This spell costs less.)
+Dart	ABILITY_Dart.svg	5		Skill	Throw a nail that ignores shield.	Throw a stronger nail that ignores shield. (This spell costs less.)
+Desecrate	ABILITY_Desecrate.svg	0		Skill	Destroy a body.	Destroy a body and gain 2 mana.
+Dexterous Hit	ABILITY_Dexterous_Hit.svg	6		Attack	A melee attack that deals damage equal to half your Dexterity, rounded up.	A melee attack that deals damage equal to half your Dexterity, rounded up. (This spell costs less.)
+Doll Up	ABILITY_Doll_Up.svg	2		Skill	Gain +1 Charisma.	Gain +1 Charisma.Bonus Passive: You have a chance to inflict Charm on units that contact or attack you. This chance increases with your Charisma.
+Dump	ABILITY_Dump.svg	3		Skill	Spawn a poop on an adjacent tile.	Spawn a poop on an adjacent tile. Inflict Poison 3 and a 15% chance to Stun if you poop on a unit.
+Feather Feet	ABILITY_Feather_Feet.svg	4		Skill	Gain +1 Speed.	Gain +1 Speed.Bonus Passive: You're unaffected by tile effects.
+Find a Rock	ABILITY_Find_a_Rock.svg	4		Skill	Dig up a small rock.	Dig up a small rock. (This spell costs less.)
+Flex	ABILITY_Flex.svg	5		Skill	Gain +1 temporary Brace until your next turn and deal 1 knockback to each adjacent unit.	Gain +1 temporary Brace until your next turn and deal 3 knockback to each adjacent unit. (This spell costs less.)
+Focus	ABILITY_Focus.svg	4		Skill	Gain +1 Dexterity.	Gain +1 Dexterity.Bonus Passive: +25% critical hit chance.
+Forbidden Fart	ABILITY_Forbidden_Fart.svg	0		Attack	Damage, Inflict Poison 4 and Knock Up nearby units.There will be permanent consequences for casting this spell… (Castable once per turn.)	Damage, Inflict Poison 6 and Knock Up nearby units in a larger area.There will be permanent consequences for casting this spell… (Castable once per turn.)
+Gamble	ABILITY_Gamble.svg	2		Attack	Gain +2% critical hit chance. If your next attack is critical, deal +100% more damage and spawn coins.	Gain +2% critical hit chance. If your next attack is critical, deal +200% more damage and spawn more coins.
+Gym Membership	ABILITY_Gym_Membership.svg	0		Skill	Spend 5 coins, gain All Stats Up. (Castable once per turn.)	Spend 5 coins, gain All Stats Up and refresh your basic attack and movement actions. (Castable once per turn.)
+Healing Bolt	ABILITY_Healing_Bolt.svg	7		Attack	A lightning bolt that heals and has a chance to Stun.	A lightning bolt that heals allies and has a chance to Stun enemies.
+Hire Hitman	ABILITY_Hire_Hitman.svg	0		Power	Spend 7 coins, summon a bounty hunter. (Castable once per turn.)	Spend 7 coins, summon a bounty hunter with All Stats Up 2. (Castable once per turn.)
+Hiss	ABILITY_Hiss.svg	6		Skill	Adjacent units move away from you. You have a 25% chance to inflict Fear on them.	Adjacent units move away from you. Inflict fear on them.
+Hop	ABILITY_Hop.svg	3		Skill	Hop up to 2 tiles away.	Hop up to 4 tiles away.
+Hose Off	ABILITY_Hose_Off.svg	5		Skill	Spray a unit with water, cleansing its debuffs and making a puddle. (Castable once per battle.)	Spray a unit with water, cleansing its debuffs and making a puddle. (This spell costs 0 mana. Castable once per battle.)
+Hunt	ABILITY_Hunt.svg	6		Attack	A ranged attack that turns anything it kills into meat.	A stronger ranged attack that turns anything it kills into meat.
+Interchange	ABILITY_Interchange.svg	3		Attack	Exchange your movement action for an additional basic attack, and vice versa.	Exchange your movement action for an additional basic attack, and vice versa. (This spell costs 0 mana the first time you cast it each turn.)
+Invert	ABILITY_Invert.svg	2		Skill	Swap your highest and lowest stats. (Ties are chosen at random)	Swap a unit's highest and lowest stats. (Ties are chosen at random)
+Itch	ABILITY_Itch.svg	3		Attack	Deal 1 damage to yourself. 50% chance to spawn a friendly flea.	Deal 1 damage to yourself. Spawn a friendly flea.
+Knead	ABILITY_Knead.svg	5		Attack	Knead another unit. Allies gain +1 Damage, enemies gain Weakness 1.	Knead another unit. Allies gain +2 Damage, enemies gain Weakness 2.
+Landscape	ABILITY_Landscape.svg	1		Skill	Turn an adjacent tile into a small grass tile.	Turn any tile into a small grass tile.
+Lick	ABILITY_Lick.svg	4		Skill	Heal an adjacent unit by 2 HP.	Heal an adjacent unit by 2 HP. Healed enemies gain Confusion 3.
+Look at me!	ABILITY_Look_at_me!.svg	2		Skill	Each unit turns to face you.	Each unit turns to face you. 20% chance to Confuse enemies.
+Magnet	ABILITY_Magnet.svg	0		Skill	Pull a pickup one tile toward you. (Castable once per turn.)	Pull a pickup all the way toward you. (Castable once per turn)
+Make a Wish	ABILITY_Make_a_Wish.svg	0		Skill	Spend a coin to spawn a random pickup on a random tile. (Castable once per turn.)	Spend a coin to spawn a random pickup on an empty tile of your choice. (Castable once per turn.)
+Meow	ABILITY_Meow.svg	2		Skill	Your closest ally moves toward you.	A target ally moves toward you.
+Metabolize	ABILITY_Metabolize.svg	3		Skill	Gain +1 Constitution.	Gain +1 Constitution.Bonus Passive: +3 Health Regeneration.
+Metronome	ABILITY_Metronome.svg	5		Skill	Cast a random spell.	Cast a random upgraded spell.
+Minihook	ABILITY_Minihook.svg	3		Skill	Pull a unit towards you.	Pull a unit towards you. Deal 1 damage and inflict 1 Bleed on them.
+Nerf	ABILITY_Nerf.svg	4		Attack	Inflict -1 Damage on a unit.	Inflict -1 Damage and -1 Constitution on a unit.
+Number One	ABILITY_Number_One.svg	2		Skill	Spawn "water" tiles in an area around yourself.	Spawn "water" tiles in a larger area around yourself.
+Over There!	ABILITY_Over_There!.svg	2		Skill	Adjacent units turn away from you.	Units within three tiles of you turn away from you.
+Path of the Butcher	ABILITY_Path_of_the_Butcher.svg	1		Skill	Collect an adjacent food pickup, then this spell becomes a random Butcher spell permanently.	Transform this spell into a random upgraded Butcher spell permanently.
+Path of the Cleric	ABILITY_Path_of_the_Cleric.svg	0		Skill	Give an enemy All Stats Up and fully heal it, then this spell becomes a random Cleric spell permanently.	Transform this spell into a random upgraded Cleric spell permanently.
+Path of the Druid	ABILITY_Path_of_the_Druid.svg	2		Skill	Plant flowers on the tile you're standing on, then this spell becomes a random Druid spell permanently. Castable only if you're standing on a grass tile.	Transform this spell into a random upgraded Druid spell permanently.
+Path of the Fighter	ABILITY_Path_of_the_Fighter.svg	0		Skill	Your Intelligence becomes 0 until the end of the battle, then this spell becomes a random Fighter spell permanently.	Transform this spell into a random upgraded Fighter spell permanently.
+Path of the Hunter	ABILITY_Path_of_the_Hunter.svg	5		Attack	A lobbed attack that deals 1 damage. If this kills an enemy, this spell becomes a random Hunter spell permanently.	Transform this spell into a random upgraded Hunter spell permanently.
+Path of the Jester	ABILITY_Path_of_the_Jester.svg	0		Skill	Gain 10 random stat ups and 5 random stat downs, then transform this spell into a random class spell permanently.	Gain 10 random stat ups, then transform this spell into a random upgraded class spell permanently.
+Path of the Mage	ABILITY_Path_of_the_Mage.svg	12		Skill	Transform this spell into a random Mage spell permanently.	Transform this spell into a random upgraded Mage spell permanently.
+Path of the Monk	ABILITY_Path_of_the_Monk.svg	0		Skill	Gain All Stats Down, then this spell becomes a random Monk spell permanently.	This spell becomes a random upgraded Monk spell permanently.
+Path of the Necromancer	ABILITY_Path_of_the_Necromancer.svg	0		Skill	Destroy a corpse, then this spell becomes a random Necromancer spell permanently.	Transform this spell into a random Necromancer spell permanently.
+Path of the Psychic	ABILITY_Path_of_the_Psychic.svg	0		Skill	This spell becomes a random Psychic spell permanently. Castable only if you have full mana.	Transform this spell into a random upgraded Psychic spell permanently.
+Path of the Tank	ABILITY_Path_of_the_Tank.svg	0		Skill	Transform this spell into a random Tank spell permanently. Castable only if you have 5 or less health.	Transform this spell into a random upgraded Tank spell permanently.
+Path of the Thief	ABILITY_Path_of_the_Thief.svg	4		Attack	A straight shot attack that deals 1 damage. If this makes a critical hit, this spell becomes a random Thief spell permanently.	Transform this spell into a random upgraded Thief spell permanently.
+Path of the Tinkerer	ABILITY_Path_of_the_Tinkerer.svg	0		Skill	Destroy your weapon, then this spell becomes a random Tinkerer spell permanently.	Transform this spell into a random upgraded Tinkerer spell permanently.
+Path Of The Void	ABILITY_Path_Of_The_Void.svg	1		Skill	Conjure a random Collarless spell into your bonus spell slot.	Conjure a random upgraded Collarless spell into your bonus spell slot.
+Play Dead	ABILITY_Play_Dead.svg	0		Skill	Down yourself. You don't get injured.	Down yourself. You don't get injured. Revive at the end of the next round at full HP.
+Ponder	ABILITY_Ponder.svg	4		Skill	Gain +1 Intelligence.	Gain +1 Intelligence and conjure a random bonus ability.
+Proliferate	ABILITY_Proliferate.svg	8		Skill	Double a unit's Poison, Bleed, and Burn. (Castable once per battle.)	Double a unit's Poison, Bleed, and Burn. (This spell costs 0 mana. Castable once per battle.)
+Purr	ABILITY_Purr.svg	4		Skill	Remove 1 stack of a random debuff from yourself and all adjacent units.	Remove 1 stack of a random debuff from and heal 1 HP to yourself and all adjacent units.
+Randomize	ABILITY_Randomize.svg	2		Skill	Spawn a random tile anywhere.	Tiles in an area become random tiles.
+Rat Roulette	ABILITY_Rat_Roulette.svg	6		Attack	Deal 1 damage to a random unit. If you kill that unit, take an extra turn.	Deal 2 damage to a random unit. If you kill that unit, take an extra turn. (This spell costs less.)
+Reach	ABILITY_Reach.svg	4		Attack	Your next basic attack has +1 range.	Your next basic attack has +3 range.
+Reduce	ABILITY_Reduce.svg	5		Attack	Gain +20% dodge chance, +4 Speed, and -2 Damage. (Castable once per battle.)	Gain +20% dodge chance, +4 Speed, and -2 Damage. (This spell costs 0 mana. Castable once per battle.)
+Reflect	ABILITY_Reflect.svg	6		Attack	Reflect the next projectile that hits you back at the attacker.	You or another unit reflects the next projectile that hits them back at the attacker.
+Rest	ABILITY_Rest.svg	2		Skill	Heal some HP, then fall asleep.	Heal a lot of HP, then fall asleep.
+Roll	ABILITY_Roll.svg	4		Skill	Roll up to three tiles in a straight line.	Roll up to ten tiles in a straight line.
+Rouse	ABILITY_Rouse.svg	0		Skill	Give an adjacent unit +2 Charge. (Castable once per turn.)	Give any unit +2 Charge. (Castable once per turn.)
+Russian Shorthair Roulette	ABILITY_Russian_Shorthair_Roulette.svg	2		Skill	There is a 1 in 6 chance this will kill you. If it doesn't, gain +1 to a random stat and 1-2 coins.	There is a 1 in 6 chance this will kill you. If it doesn't, gain +2 to a random stat and 2-4 coins.
+Second Wind	ABILITY_Second_Wind.svg	8		Attack	Refresh your basic attack, movement, weapon, and trinket action. (Castable once per battle.)	Refresh your basic attack, movement, weapon, and trinket action. (This spell costs 0 mana. Castable once per battle.)
+Sharpen Claws	ABILITY_Sharpen_Claws.svg	4		Skill	Gain +1 Strength.	Gain +1 Strength.Bonus Passive: Your basic attack inflicts Bleed.
+Shift	ABILITY_Shift.svg	0		Skill	Swap positions with an adjacent unit. (Castable once per turn.)	Swap positions with any unit. (Castable once per turn.)
+Shrug It Off	ABILITY_Shrug_It_Off.svg	6		Skill	Heal yourself HP equal to half your Strength, rounded up.	Heal yourself HP equal to half your Strength, rounded up. (This spell costs less.)
+Slip Through	ABILITY_Slip_Through.svg	4		Skill	Roll up to two tiles in a diagonal line.	Roll any number of tiles in a diagonal line.
+Smack	ABILITY_Smack.svg	5		Attack	A weak melee attack.	A weak melee attack with a chance to repeat.
+Snacks	ABILITY_Snacks.svg	3		Skill	Heal yourself or another unit within four tiles 1 HP.	Heal yourself or another unit 1 HP. 50% chance to also give +1 Constitution.
+Soothing Glow	ABILITY_Soothing_Glow.svg	2		Skill	Heal yourself 1.	Heal yourself 1 and gain +1 to a random stat.
+Soul Reap	ABILITY_Soul_Reap.svg	3		Attack	Deal 1 damage to a unit within five tiles. If this kills it, gain 5 mana.	Deal 1 damage to any unit. If this kills it, gain 5 mana.
+Spit	ABILITY_Spit.svg	4		Attack	Spit attack with infinite range that deals 1 damage.	Spit attack with infinite range that deals 2 damage in an area.
+Stack the Deck	ABILITY_Stack_the_Deck.svg	4		Skill	Gain +1 Luck.	Gain +1 Luck. You have +9 Luck during your next action.
+Steam Roller	ABILITY_Steam_Roller.svg	4		Skill	Trample over 1 tile.	Trample over 3 tiles.
+Step	ABILITY_Step.svg	0		Skill	Move one tile. (Castable once per turn.)	Move two tiles. (Castable once per turn.)
+Stun	ABILITY_Stun.svg	5		Skill	Chuck a rock at a unit, inflicting Stun on that unit. (Castable once per battle.)	Chuck a rock at a unit, inflicting Stun on that unit. (This spell costs 0 mana. Castable once per battle.)
+Subway Ride	ABILITY_Subway_Ride.svg	0		Skill	Spend 5 coins, teleport to any tile. (Castable once per turn.)	Spend 2 coins, teleport to any tile. (Castable once per turn.)
+Sudden Affliction	ABILITY_Sudden_Affliction.svg	6		Skill	Trigger the Poison, Bleed, and Burn effects on a unit.	Trigger the Poison, Bleed, and Burn effects on a unit. If that unit isn't Poisoned, Bleeding, or Burning, they gain 1 of each.
+Sunburn	ABILITY_Sunburn.svg	6		Skill	Inflicts Burn 1 and Blind 1 at infinite range.	Inflict Burn 1 and Blind 1 in an area at infinite range.
+Super Crate Box	ABILITY_Super_Crate_Box.svg	4		Skill	Spawn a crate on an adjacent tile.	Spawn a crate within range 5.
+Swat	ABILITY_Swat.svg	3		Skill	Knockback a unit 3 tiles.	Knockback a unit 10 tiles. (This spell costs less.)
+Toast	ABILITY_Toast.svg	3		Skill	Inflict Burn 1 on an adjacent unit.	Inflict Burn 1 on a unit in range 5.
+Trip	ABILITY_Trip.svg	4		Skill	Immobilize an adjacent unit. This only has a 25% chance to work on boss units and large enemies.	Immobilize a unit in range 4. This only has a 25% chance to work on boss units and large enemies.
+Tunnel	ABILITY_Tunnel.svg	3		Skill	Dig to any open tile. (Castable once per battle.)	Dig to any open tile. (Castable once per battle. This spell costs 0 mana.)
+Vet Visit	ABILITY_Vet_Visit.svg	0		Skill	Spend 5 coins, heal 10 HP. (Castable once per turn.)	Spend 5 coins, heal 15 HP. (Castable once per turn.)
+Waste Time	ABILITY_Waste_Time.svg	1		Skill	Do nothing.	Gain 1 Charge.
+Wet Hairball	ABILITY_Wet_Hairball.svg	7		Attack	Shoot a wet hairball that deals damage in an area.	Shoot a wet hairball that deals more damage in an area.
+Zap	ABILITY_Zap.svg	4		Attack	Deal 1 electric damage at infinite range.	Deal 1 electric damage with a 25% chance to Stun at infinite range.
